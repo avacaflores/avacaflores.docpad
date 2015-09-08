@@ -1,0 +1,15 @@
+# Temp Files
+**/.docpad.db
+**/out.*
+**/*.log
+**/*.cpuprofile
+**/*.heapsnapshot
+
+# Build Files
+build/
+components/
+bower_components/
+node_modules/
+out/
+coffeejs/
+es5/
