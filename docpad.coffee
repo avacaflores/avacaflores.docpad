@@ -8,7 +8,7 @@ docpadConfig = {
       description: ''
       logo: '/img/logo.png'
       url: 'avacaflores.github.io'
-      cover: '/img/cover.jpg'
+      cover: '/img/keyboardnight.jpg'
       author: 'ALFONSO VACAFLORES'
       navigation: [
         {

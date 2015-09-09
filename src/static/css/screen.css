@@ -789,7 +789,8 @@ body.nav-opened .nav {
 .blog-author {
 	font-family: 'Rock Salt', cursive;
 	font-size: 1rem;
-	text-shadow: rgb(200, 200, 200) 0px 2px 2px;
+	color: #FFFFFF;
+	text-shadow: #000000 0px 2px 2px;
 	float: left;
 	margin-top: 30px;
 	padding-left: 10px;
@@ -886,7 +887,7 @@ body.nav-opened .nav {
     font-weight: 700;
     font-family: "Open Sans", sans-serif;
     color: #fff;
-    text-shadow: rgb(48, 47, 54) 0px 3px 3px;
+    text-shadow: #000000 0px 3px 3px;
 }
 
 .page-description {
@@ -896,8 +897,8 @@ body.nav-opened .nav {
     font-weight: 400;
     /*font-family: "Merriweather", serif;*/
     letter-spacing: 0.01rem;
-    color: #381631; /*rgba(255,255,255,0.8);*/
-    text-shadow: rgb(255, 255, 255) 0px 2px 2px;
+    color: #FEDDA6; /*rgba(255,255,255,0.8);*/
+    text-shadow: #000000 0px 2px 2px;
 }
 
 .no-cover.main-header {
