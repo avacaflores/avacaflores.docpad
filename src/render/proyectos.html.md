@@ -1,10 +1,9 @@
 ---
-title: ''
+title: 'Proyectos'
+titleOnBanner: true
 cover: '/img/blocks.jpg'
 layout: 'page'
 ---
-
-# Proyectos
 
 ### Bicho
 

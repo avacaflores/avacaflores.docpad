@@ -34,7 +34,7 @@ docpadConfig = {
       ]
     author:
       name: 'Alfonso Vacaflores'
-      image: '/img/logo.png'
+      img: '/img/logo.png'
       url: 'avacaflores.github.io'
       location: 'Tarija, Bolivia',
       bio: ''

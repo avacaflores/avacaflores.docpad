@@ -1,9 +1,9 @@
 ---
 title: 'Alfonso Vacaflores'
-cover: '/img/keyboard.jpg'
+titleOnBanner: true
+cover: '/img/hitech.jpg'
 layout: 'page'
 ---
-
 
 Soy un boliviano amante  de la tecnología, creo firmemente que cuando tu trabajo y tu hobby son lo mismo, disfrutarás lo que haces cada día y sentirás que dejaste de trabajar.
 
