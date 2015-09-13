@@ -1,9 +1,9 @@
 ---
 title: 'Recursos'
-cover: '/img/resources.jpg'
+titleOnBanner: true
+cover: '/img/board.jpg'
 layout: 'page'
 ---
-
 
 Esta seccion será dinámica, listaré mis mejores recursos (libros, videos, podcasts, blogs, etc). Todo estará clasificado por temas.
 

@@ -1,7 +1,15 @@
 <header class="main-header post-head" style="background-image: url(<%= @masthead() %>)">
+  <% if @document.titleOnBanner: %>
+    <div class="vertical">
+      <div class="main-header-content inner">
+        <h1 class="page-title"><%= @document.title %></h1>
+      </div>
+    </div>
+  <% end %>
+    
   <nav class="main-nav overlay clearfix">
-    <% if @site.logo: %>
-    <a class="blog-logo" href="<%= @site.url %>"><img src="<%= @site.logo %>" alt="<%= @site.title %>" /></a>
+    <% if @site.logo.not: %>
+      <a class="blog-logo" href="<%= @site.url %>"><img src="<%= @site.logo %>" alt="<%= @site.title %>" /></a>
     <% end %>
     <% if @site.navigation: %>
       <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
