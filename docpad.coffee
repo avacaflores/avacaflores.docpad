@@ -7,7 +7,7 @@ docpadConfig = {
       tagline: 'Tecnología, programación y un poco de electrónica'
       description: ''
       logo: '/img/logo.png'
-      url: 'avacaflores.github.io'
+      url: 'index.html'
       cover: '/img/keyboardnight.jpg'
       author: 'ALFONSO VACAFLORES'
       navigation: [

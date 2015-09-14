@@ -16,3 +16,4 @@ es5/
 
 # OS files
 .DS_Store
+.project

@@ -1756,6 +1756,14 @@ body:not(.post-template) .post-title {
         font-size: 1rem;
         margin-top: 20px;
     }
+    
+    .poweredby {
+        padding-right: 10px;
+    }
+
+    .copyright {
+        padding-left: 10px;
+    }
 
 
 }
