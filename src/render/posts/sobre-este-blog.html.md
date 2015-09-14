@@ -7,6 +7,7 @@ excerptOther: ''
 postDate: '2014-05-09 18:42:44 -0400'
 tags:
  - general
+ - blog
 ---
 
 Después de muchos años y de algunos intentos fallidos he decido iniciar este blog dedicado a la tecnología. Como su título lo dice, este blog es **"Por puro gusto"** a esta pasión que la he reencontrado después de muchos años. Como buen [geek](http://es.wikipedia.org/wiki/Geek) esto de escribir no es lo mío pero estoy confiado que podré plasmar algo de mi conocimiento en estos posts.
