@@ -1603,7 +1603,7 @@ body:not(.post-template) .post-title {
 
 .poweredby {
     display: block;
-    width: 35%;
+    width: 40%;
     float: right;
     text-align: right;
     padding-right: 60px;
@@ -1611,7 +1611,7 @@ body:not(.post-template) .post-title {
 
 .copyright {
     display: block;
-    width: 35%;
+    width: 40%;
     float: left;
     padding-left: 60px;
 }

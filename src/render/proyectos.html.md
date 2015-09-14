@@ -31,7 +31,7 @@ layout: 'page'
 - Desarrollado en SSRS 2008 R2/Sharepoint
 
 <hr>
-# Otros Proyectos
+## Otros Proyectos
 ### User Audit
 ![img](/img/UserAudit.png)  
 - Dashboard para la auditoría de acceso de usuarios a inSight  
@@ -51,7 +51,7 @@ layout: 'page'
 - Desarrollado en Objective-C/Xcode/SpriteKit  
 
 <hr>
-# Electrónica
+## Electrónica
 ### Arduino
 ![img](/img/Arduino.png) 
 - Robot Autónomo   

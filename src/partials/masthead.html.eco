@@ -1,4 +1,4 @@
-<header class="main-header post-head" style="background-image: url(<%= @masthead() %>)">
+<header class="main-header post-head" style="background-image: url(<%= @bannerImage() %>)">
   <% if @document.titleOnBanner: %>
     <div class="vertical">
       <div class="main-header-content inner">

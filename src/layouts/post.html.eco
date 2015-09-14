@@ -77,7 +77,7 @@ layout: 'default'
   <% for post, postIndex in @getCollection('posts').toJSON(): %>
     <% if @document.id is post.id: %>
       <% if postIndex < @getCollection('posts').length - 1: %>
-        <a class="read-next-story" style="background-image: url(<%= @masthead( @getCollection('posts').toJSON()[postIndex+1]) %>)" href="<%= @getCollection('posts').toJSON()[postIndex+1].url %>">
+        <a class="read-next-story" style="background-image: url(<%= @bannerImage( @getCollection('posts').toJSON()[postIndex+1]) %>)" href="<%= @getCollection('posts').toJSON()[postIndex+1].url %>">
           <section class="post">
             <h2><%= @getCollection('posts').toJSON()[postIndex+1].title %></h2>
             <p><%= @excerpt(@getCollection('posts').toJSON()[postIndex+1], 19) %>&hellip;</p>
@@ -85,7 +85,7 @@ layout: 'default'
         </a>
       <% end %>
       <% if postIndex >= 1: %>
-        <a class="read-next-story prev" style="background-image: url(<%= @masthead( @getCollection('posts').toJSON()[postIndex-1]) %>)" href="<%= @getCollection('posts').toJSON()[postIndex-1].url %>">
+        <a class="read-next-story prev" style="background-image: url(<%= @bannerImage( @getCollection('posts').toJSON()[postIndex-1]) %>)" href="<%= @getCollection('posts').toJSON()[postIndex-1].url %>">
           <section class="post">
             <h2><%= @getCollection('posts').toJSON()[postIndex-1].title %></h2>
             <p><%= @excerpt(@getCollection('posts').toJSON()[postIndex-1], 19) %>&hellip;</p>

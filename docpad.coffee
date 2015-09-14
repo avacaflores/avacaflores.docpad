@@ -41,9 +41,9 @@ docpadConfig = {
     getPreparedTitle: -> if @document.title then "#{@document.title} | #{@site.title}" else @site.title
     getDescription: -> if @document.description then "#{@document.description} | #{@site.description}" else @site.description
     bodyClass: -> if @document.isPost then "post-template" else "home-template"
-    masthead: (d) ->
+    bannerImage: (d) ->
       d = d || @document
-      if d.cover then d.cover else @site.cover
+      if d.cover then d.cover else '/img/blogging.jpg'
     isCurrent: (l) ->
       if @document.section is l.section  then ' nav-current'
       else if @document.url is l.href then ' nav-current'
@@ -67,10 +67,6 @@ docpadConfig = {
       extension: '.html'
       injectDocumentHelper: (doc) ->
         doc.setMeta { layout: 'tag' }
-    rss:
-      default:
-        collection: 'posts'
-        url: '/rss.xml'
     ghpages:
         deployRemote: 'origin'
         deployBranch: 'master'

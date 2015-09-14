@@ -1,6 +1,7 @@
 ---
 layout: 'default'
 section: 'blog'
+cover: '/img/keyboardnight.jpg'
 isPaged: true
 pagedCollection: 'posts'
 split: true
@@ -8,7 +9,7 @@ prefix: 'page'
 pageSize: 6
 ---
 
-<header class="main-header" style="background-image: url(<%= @masthead() %>)">
+<header class="main-header" style="background-image: url(<%= @bannerImage() %>)">
 	<nav class="main-nav overlay clearfix">
 		<% if @site.logo: %>
 			<a class="blog-logo" href="<%= @site.url %>"> <img src="<%= @site.logo %>" alt="<%= @site.title %>" /></a>
