@@ -35,4 +35,5 @@ pageSize: 6
 	<% end %>
 
 	<%- @partial('pagination') %>
+	
 </main>

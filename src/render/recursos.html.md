@@ -7,13 +7,22 @@ layout: 'page'
 
 Esta seccion será dinámica, listaré mis mejores recursos (libros, videos, podcasts, blogs, etc). Todo estará clasificado por temas.
 
-#### Tecnología en General
+#### General
+
+** Aplicaciones**
+
+- [Sip Color Picker](http://theolabrothers.com)
+- [ImageOptim](https://imageoptim.com)
+
+**Cursos en Video**
+
+- [Lynda.com](http://www.lynda.com)
 
 **Podcasts**  
 - [Tech Weekly (the guardian)](https://itunes.apple.com/us/podcast/tech-weekly/id270424643?mt=2)  
 - [TechStuff (HowStuffWorks.com)](https://itunes.apple.com/us/podcast/techstuff/id282795787?mt=2)  
 
-#### iOS y Objective-C
+#### iOS / Objective-C / Swift
 
 **Cursos en video**  
 - [Developing iOS 7 Apps for iPhone and iPad (Stanford CS193p)](https://itunes.apple.com/us/course/developing-ios-7-apps-for/id733644550)  
@@ -37,11 +46,14 @@ http://www.amazon.com/iOS-Programming-Ranch-Guide-Guides/dp/0321942051)
 - [Ruby on Rails Tutorial](http://www.railstutorial.org)  
 
 
-#### Javascript & jQuery & CSS
+#### Javascript / jQuery / CSS
 
 #### Mobile design
 
 #### Business Intelligence
+
+**Libros**
+- [The Data Warehouse Toolkit: The Definitive Guide to Dimensional Modeling (Ralph Kimball and Margy Ross)](http://www.amazon.com/Data-Warehouse-Toolkit-Definitive-Dimensional/dp/1118530802/ref=sr_1_1?ie=UTF8&qid=1442241276&sr=8-1&keywords=datawarehouse+toolkit)
 
 #### Electronica & Arduino
 

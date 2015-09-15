@@ -1,5 +1,0 @@
-<% for tag, data of @getTagCloud(): %>
-    <a href="<%= data.url %>" data-tag-count="<%= data.count %>" data-tag-weight="<%= data.weight %>" style="font-size: <%= 100+100*data.weight %>%">
-        <%= tag %>
-    </a>
-<% end %>

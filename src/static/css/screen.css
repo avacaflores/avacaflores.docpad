@@ -441,6 +441,9 @@ margin on the iframe, cause it breaks stuff. */
 }
 
 
+
+
+
 /* ==========================================================================
    3. Utilities - These things get used a lot
    ========================================================================== */
@@ -1053,6 +1056,12 @@ body:not(.post-template) .post-title {
 }
 
 
+.tagcloud {
+	padding: 10px 10px 10px 60px;
+	width: 50%;
+}
+
+
 /* ==========================================================================
    5. Single Post - When you click on an individual post
    ========================================================================== */
@@ -1617,6 +1626,9 @@ body:not(.post-template) .post-title {
 }
 
 
+
+
+
 /* ==========================================================================
    11. Media Queries - Smaller than 900px
    ========================================================================== */
@@ -1765,6 +1777,10 @@ body:not(.post-template) .post-title {
         padding-left: 10px;
     }
 
+	.tagcloud {
+		padding: 10px;
+		width: auto;
+	}
 
 }
 
@@ -2091,3 +2107,6 @@ body:not(.post-template) .post-title {
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
    ========================================================================== */
+  
+  
+

@@ -7,7 +7,7 @@ cover: '/img/blogging.jpg'
 <%- @partial('masthead') %>
 
 <main id="content" class="content" role="main">
-	<h1 style="width: 80%; max-width: 710px; margin: 0px auto;">Posts para el tag "<%= @document.tag %>"</h1>
+	<h1 style="width: 80%; max-width: 710px; margin: 0px auto;">Posts para el tag "<%= @document.tag %>"</h1><hr>
 	<% for page in @getFiles({tags:{$has: @document.tag} ,isPagedAuto: {$ne: true}}, {postDate: -1}).toJSON(): %>
 		<%- @partial('posts-list',{page: page}) %>
 	<% end %>
