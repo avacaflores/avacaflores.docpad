@@ -13,6 +13,8 @@ Esta seccion será dinámica, listaré mis mejores recursos (libros, videos, pod
 
 - [Sip Color Picker](http://theolabrothers.com)
 - [ImageOptim](https://imageoptim.com)
+- [Sublime Text 2](http://www.sublimetext.com)
+- [Oh-My-Zsh](http://ohmyz.sh)
 
 **Cursos en Video**
 
@@ -21,19 +23,26 @@ Esta seccion será dinámica, listaré mis mejores recursos (libros, videos, pod
 **Podcasts**  
 - [Tech Weekly (the guardian)](https://itunes.apple.com/us/podcast/tech-weekly/id270424643?mt=2)  
 - [TechStuff (HowStuffWorks.com)](https://itunes.apple.com/us/podcast/techstuff/id282795787?mt=2)  
+- [Roundabout: Creative Caos](https://itunes.apple.com/us/podcast/roundabout-creative-chaos/id918306329?mt=2)
+
 
 #### iOS / Objective-C / Swift
 
 **Cursos en video**  
 - [Developing iOS 7 Apps for iPhone and iPad (Stanford CS193p)](https://itunes.apple.com/us/course/developing-ios-7-apps-for/id733644550)  
+- [RayWenderlich](http://www.raywenderlich.com/video-tutorials)
   
-**Libros**   
+**Libros**  
+- [RayWenderlich](http://www.raywenderlich.com)
 - [Programing in Objective-C (Stephen G. Kochan)](http://www.amazon.com/Programming-Objective-C-Edition-Developers-Library/dp/0321967607)  
 - [Objective-C Programming - The Big Nerd Ranch Guide (Aaron Hillegass/Mikey Ward)](
 http://www.amazon.com/Objective-C-Programming-Ranch-Guide-Guides/dp/032194206X)  
 - [Foundation iPhone App Development (Nick Kuh)](http://www.amazon.com/Foundation-iPhone-App-Development-Build/dp/1430243740)  
 - [iOS Programming - The Big Nerd Ranch Guide (Joe Conway/Aaron Hillegass)](
-http://www.amazon.com/iOS-Programming-Ranch-Guide-Guides/dp/0321942051)  
+http://www.amazon.com/iOS-Programming-Ranch-Guide-Guides/dp/0321942051) 
+
+**Podcasts**
+- [RayWenderlich Podcast](http://www.raywenderlich.com/rwpodcast) 
   
 #### Ruby & Ruby on Rails
 
