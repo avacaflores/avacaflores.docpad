@@ -8,6 +8,8 @@ postDate: '2014-07-30 21:12:02 -0400'
 tags:
  - objective-c
  - spritekit
+ - ios
+ - games
 ---
 
 La nueva versión de Xcode 6 trae muchos cambios entre ellos algunos que mas bien parecerían ser errores, tal es el caso de la función `removeFromParent` en SpriteKit. 

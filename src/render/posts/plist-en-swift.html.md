@@ -7,6 +7,7 @@ excerptOther: ''
 postDate: '2014-06-12 07:12:02 -0400'
 tags:
  - swift
+ - ios
 ---
 
 La presentación del nuevo leguaje de programación Swift a despertado a un grupo muy grande programadores y no programadores, todos ansiosos por experimentar con el nuevo juguete.

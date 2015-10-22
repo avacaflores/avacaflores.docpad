@@ -11,7 +11,6 @@
     <%- @getBlock("styles").add('/css/screen.css').add('/css/railscasts.css').add('//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400').toHTML() %>
     <meta name="generator" content="Docpad 6.x" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Rock+Salt" />
-    <link rel="alternate" type="application/rss+xml" title="<%= @site.title %>" href="/rss.xml" />
   </head>
   <body class="<%= @bodyClass() %> nav-closed">
     <%- @partial('navigation') %>
@@ -20,6 +19,7 @@
       <%- @content %>
 
       <footer class="site-footer clearfix">
+      	<%- @partial('tagcloud') %>
         <section class="copyright"><a href="<%= @site.url %>"><%= @author.name %></a> &copy; <%= @currentYear() %></section>
         <section class="poweredby">Powered by <a href="https://docpad.org">DocPad</a></section>
       </footer>
