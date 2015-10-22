@@ -9,6 +9,7 @@ tags:
  - octopress
  - ruby
  - blog
+ - web
 ---
 
 Octopress es un framework para páginas estáticas basado en Jekyll, sin lugar a duda es una excelente y divertida manera de publicar un blog o página personal. Como su eslogan lo dice "A blogging framework for hackers" necesita de ciertos conocimiento básicos de Ruby y su servidor Rack. Pero por sobre todas las cosas necesita que perdamos el miedo a la línea de comandos ya que todo el trabajo se debe hacer desde un editor de textos normal y comandos en la consola.

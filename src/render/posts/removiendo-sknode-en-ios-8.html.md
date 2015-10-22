@@ -10,6 +10,7 @@ tags:
  - spritekit
  - ios
  - games
+ - movil
 ---
 
 La nueva versión de Xcode 6 trae muchos cambios entre ellos algunos que mas bien parecerían ser errores, tal es el caso de la función `removeFromParent` en SpriteKit. 

@@ -10,124 +10,120 @@ tags:
  - json
  - asynctaks
  - java
+ - movil
 ---
 
-Desde hace varios años estoy dedicado a la programación móvil especialmente en la plataforma iOS, sin embargo hace unos meses entre a un Diplomado de programación móvil y como no podía ser de otra manera una de los módulo era programación para dispositivos Android.
+Desde hace varios años estoy dedicado "en mi tiempo libre" a la programación móvil especialmente en la plataforma iOS, sin embargo hace unos meses entre a un Diplomado de programación móvil y como no podía ser de otra manera uno de los módulos era programación para dispositivos Android.
 
-Las tres semanas disponibles para el proyecto final fueron muy complicadas ya que tuve que no solo aprender la lógica de esta plataforma sino también entender Java (dicho sea de paso fueron mis primeras experiencia con este lenguaje de programación).
+Las tres semanas disponibles para el proyecto final del módulo fueron muy complicadas ya que tuve que no solo aprender la lógica de esta plataforma sino también entender Java (dicho sea de paso fueron mis primeras experiencia con este lenguaje de programación).
 
-Uno de los requerimientos del proyecto final era el poder consumir un servicio json tanto para un GET como para un POST. Como siempre hay muchísima información en internet pero debido a mi poca experiencia en la plataforma me fue muy difícil entender los ejemplos.
+Uno de los requerimientos del proyecto final era el poder consumir un servicio JSON tanto para un GET como para un POST. Como siempre hay muchísima información en internet pero debido a mi poca experiencia en la plataforma me fue muy difícil entender los cientos de ejemplos.
 
 A continuación les muestro el código que utilice que esta basado en AsyncTaks.
 
 ## GET
 
 ``` java
-	private class NetworkOperationAsyncTask extends AsyncTask<Void, Void, String> {
+private class NetworkOperationAsyncTask extends AsyncTask<Void, Void, String> {
 
-        @Override
-        protected String doInBackground(Void... params) {
+    @Override
+    protected String doInBackground(Void... params) {
 
-            HttpURLConnection urlConnection = null;
-            BufferedReader reader = null;
-            Uri buildUri = Uri.parse("http://www.servicio.com").buildUpon()
-                    .appendPath("file.json").build();
-            try {
-                URL url = new URL(buildUri.toString());
+        HttpURLConnection urlConnection = null;
+        BufferedReader reader = null;
+        Uri buildUri = Uri.parse("http://www.servicio.com").buildUpon()
+                .appendPath("file.json").build();
+        try {
+            URL url = new URL(buildUri.toString());
 
-                urlConnection = (HttpURLConnection) url.openConnection();
-                urlConnection.setRequestMethod("GET");
-                urlConnection.addRequestProperty("Content-Type", "application/json");
-                urlConnection.connect();
+            urlConnection = (HttpURLConnection) url.openConnection();
+            urlConnection.setRequestMethod("GET");
+            urlConnection.addRequestProperty("Content-Type", "application/json");
+            urlConnection.connect();
 
-                InputStream inputStream = urlConnection.getInputStream();
-                reader = new BufferedReader(new InputStreamReader(inputStream));
-                StringBuffer buffer = new StringBuffer();
+            InputStream inputStream = urlConnection.getInputStream();
+            reader = new BufferedReader(new InputStreamReader(inputStream));
+            StringBuffer buffer = new StringBuffer();
 
-                String line;
-                while ((line = reader.readLine()) != null) {
-                    buffer.append(line).append("\n");
-                }
-
-                return buffer.toString();
-            } catch (IOException ex) {
-                Log.e(LOG_TAG, ex.getMessage());
-            } finally {
-                try {
-                    if (reader != null) {
-                        reader.close();
-                    }
-
-                    if (urlConnection != null) {
-                        urlConnection.disconnect();
-                    }
-                } catch (IOException e) {
-                    Log.e(LOG_TAG, e.getMessage());
-                }
-
+            String line;
+            while ((line = reader.readLine()) != null) {
+                buffer.append(line).append("\n");
             }
-            return "";
+
+            return buffer.toString();
+        } catch (IOException ex) {
+            Log.e(LOG_TAG, ex.getMessage());
+        } finally {
+            try {
+                if (reader != null) {
+                    reader.close();
+                }
+                if (urlConnection != null) {
+                    urlConnection.disconnect();
+                }
+            } catch (IOException e) {
+                Log.e(LOG_TAG, e.getMessage());
+            }
         }
+        return "";
     }
+}
 ```
 
 ## POST
 
 ``` java
-	private class NetworkOperationAsyncTaskPost extends AsyncTask<Void, Void, String> {
+private class NetworkOperationAsyncTaskPost extends AsyncTask<Void, Void, String> {
 
-        @Override
-        protected String doInBackground(Void... params) {
-            URL url;
-            HttpURLConnection connection = null;
-            Uri buildUri = Uri.parse("http://www.servicio.com").buildUpon()
-                    .appendPath("file.json").build();
-            try {
+    @Override
+    protected String doInBackground(Void... params) {
+        URL url;
+        HttpURLConnection connection = null;
+        Uri buildUri = Uri.parse("http://www.servicio.com").buildUpon()
+                .appendPath("file.json").build();
+        try {
+            url = new URL(buildUri.toString()); // Create a new URL
+            connection = (HttpURLConnection) url.openConnection();
+            connection.setRequestMethod("POST");
+            connection.setRequestProperty("Content-Type", "application/json");
+            connection.setRequestProperty("Accept-Language", "en-us");
+            connection.setUseCaches(false);
+            connection.setDoInput(true);
+            connection.setDoOutput(true);
+            connection.connect();
 
-                url = new URL(buildUri.toString()); // Create a new URL
-                connection = (HttpURLConnection) url.openConnection();
-                connection.setRequestMethod("POST");
-                connection.setRequestProperty("Content-Type", "application/json");
-                connection.setRequestProperty("Accept-Language", "en-us");
-                connection.setUseCaches(false);
-                connection.setDoInput(true);
-                connection.setDoOutput(true);
-                connection.connect();
+            DataOutputStream wr = new DataOutputStream(connection.getOutputStream());
 
+            byte[] outputBytes = jsonWorkPost.toString().getBytes("UTF-8");
 
-                DataOutputStream wr = new DataOutputStream(connection.getOutputStream());
+            wr.write(outputBytes);
+            wr.flush();
+            wr.close();
 
-                byte[] outputBytes = jsonWorkPost.toString().getBytes("UTF-8");
+            InputStream is = connection.getInputStream();
+            BufferedReader rd = new BufferedReader(new InputStreamReader(is));
+            String line;
+            StringBuffer response = new StringBuffer();
+            while ((line = rd.readLine()) != null) {
+                response.append(line);
+                response.append('\r');
+            }
+            rd.close();
+            return response.toString();
 
-                wr.write(outputBytes);
-                wr.flush();
-                wr.close();
+        } catch (Exception e) {
 
-                //Get Response
-                InputStream is = connection.getInputStream();
-                BufferedReader rd = new BufferedReader(new InputStreamReader(is));
-                String line;
-                StringBuffer response = new StringBuffer();
-                while ((line = rd.readLine()) != null) {
-                    response.append(line);
-                    response.append('\r');
-                }
-                rd.close();
-                return response.toString();
+            e.printStackTrace();
+            return null;
 
-            } catch (Exception e) {
+        } finally {
 
-                e.printStackTrace();
-                return null;
-
-            } finally {
-
-                if (connection != null) {
-                    connection.disconnect();
-                }
+            if (connection != null) {
+                connection.disconnect();
             }
         }
     }
+}
 ```
 
 

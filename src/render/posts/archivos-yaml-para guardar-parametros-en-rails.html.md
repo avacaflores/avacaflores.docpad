@@ -8,6 +8,7 @@ postDate: '2014-05-13 00:12:02 -0400'
 tags:
  - rails
  - yaml
+ - web
 ---
 
 Toda aplicación tiene parámetros de configuración que conviene que estén parametrizados para evitar repetición en el código y para tener la facilidad de cambiar los mismos en un solo lugar. Lo que en la herga de Rails diríamos: para estar [DRY (Don't Repeat Yourself)](http://en.wikipedia.org/wiki/Don't_repeat_yourself)

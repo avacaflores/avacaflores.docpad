@@ -8,6 +8,7 @@ postDate: '2014-05-23 00:12:02 -0400'
 tags:
  - rails
  - ruby
+ - web
 ---
 
 Rails es un framework muy flexible, existen muchas tareas que se las pueden hacer de diferentes maneras, sin embargo esta flexibilidad se ve empañada por la confusión que existe en internet. Cada version de Rails incorpora nuevos comandos y retira otros, también se puede ver que la sintaxis de los comandos ha ido cambiando en cada versión.

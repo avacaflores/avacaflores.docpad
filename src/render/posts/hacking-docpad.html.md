@@ -9,6 +9,7 @@ tags:
  - docpad
  - node.js
  - blog
+ - web
 ---
 
 La primera versión de este blog fue desarrollada en **Octopress**, una plataforma muy interesante pero poco ágil desarrollada sobre JeKyII. Todos los procesos de actualización se sentían muy pesados y los tenia que re-descubrir cada vez que quería aumentar un post. Adicionalmente note que Octopress no estaba siendo actualizado ya que la versión disponible era de 2011, el sitio de Octopress anuncia desde hace varios meses una nueva versión pero esta no llega todavía.
