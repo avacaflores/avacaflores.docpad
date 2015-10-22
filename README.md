@@ -20,6 +20,11 @@ docpad install moment
 
 - Start hacking away by modifying the `src` directory
 
+## Push
+```bash
+git push origin source
+```
+
 ## Deploy
 ``` bash
 docpad deploy-ghpages --env static
