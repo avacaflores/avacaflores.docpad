@@ -5,12 +5,27 @@ cover: '/img/blocks.jpg'
 layout: 'page'
 ---
 
-### Bicho
+### Performance Scorecard
+![img](/img/ps.png)
+- Scorecard web para el Field Result Group  
+- Business Intelligence en UNICEF  
+- Desarrollado en SSRS 2008 R2/Sharepoint
 
+### Performance Scorecard Mobile App
+![img](/img/psapp.png)
+- Scorecard web para el Field Result Group  
+- Business Intelligence en UNICEF  
+- Desarrollado en Ionic/HighCharts
+
+### 321 Count!
+![img](/img/321count.png)
+- Juego 2D  
+- Desarrollado en Swift/Xcode/SpriteKit  
+
+### Bicho
 ![img](/img/Bicho.png)
 - Juego 2D  
 - Desarrollado en Objective-C/Xcode/SpriteKit  
-- Enlace al [AppStore](https://itunes.apple.com/us/app/bicho/id896508584?mt=8)
 
 ### garaje4x4
 ![img](/img/garaje4x4.png)
@@ -30,8 +45,6 @@ layout: 'page'
 - Business Intelligence en UNICEF  
 - Desarrollado en SSRS 2008 R2/Sharepoint
 
-<hr>
-## Otros Proyectos
 ### User Audit
 ![img](/img/UserAudit.png)  
 - Dashboard para la auditoría de acceso de usuarios a inSight  
@@ -43,7 +56,6 @@ layout: 'page'
 ![img](/img/SecureHint.png)  
 - Applicación movil para la gestión de passwords  
 - Desarrollado en Objective-C/Xcode  
-- Enlace al [AppStore](https://itunes.apple.com/us/app/secure-hint/id730187231?mt=8)
 
 ### Sample Code For Sprite Kit  
 ![img](/img/SampleCode.png)  
