@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hacking Octopress | Por puro gusto</title>
+    <meta name="description" content="" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link  rel="stylesheet" href="/css/screen.css" /><link  rel="stylesheet" href="/css/railscasts.css" /><link  rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <meta name="generator" content="Docpad 6.x" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Rock+Salt" />
+  </head>
+  <body class="post-template nav-closed">
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+      <span class="hidden">Close</span>
+    </a>
+    <ul>
+      
+        <li class="nav-any" role="presentation">
+          <a href="/">Blog</a>
+        </li>
+      
+        <li class="nav-any" role="presentation">
+          <a href="/about.html">Acerca de...</a>
+        </li>
+      
+        <li class="nav-any" role="presentation">
+          <a href="/recursos.html">Recursos</a>
+        </li>
+      
+        <li class="nav-any" role="presentation">
+          <a href="/proyectos.html">Proyectos</a>
+        </li>
+      
+    </ul>
+</div>
+<span class="nav-cover"></span>
+    <div class="site-wrapper">
+    
+      <header class="main-header post-head" style="background-image: url(/img/octopress.jpg)">
+  
+    
+  <nav class="main-nav overlay clearfix">
+    
+    
+      <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+       
+  </nav>
+</header>
+
+<main class="content" role="main">
+  <article class="post">
+
+    <header class="post-header">
+      <h1 class="post-title">Hacking Octopress</h1>
+      <section class="post-meta">
+        
+        <time class="post-date" datetime="2014-mayo-16">16 mayo 2014</time> | 
+  <a href="/tags/octopress.html">octopress</a>, 
+
+  <a href="/tags/ruby.html">ruby</a>, 
+
+  <a href="/tags/blog.html">blog</a>, 
+
+  <a href="/tags/web.html">web</a>
+
+      </section>
+    </header>
+    
+    <section class="post-content">
+      <p>Octopress es un framework para páginas estáticas basado en Jekyll, sin lugar a duda es una excelente y divertida manera de publicar un blog o página personal. Como su eslogan lo dice &quot;A blogging framework for hackers&quot; necesita de ciertos conocimiento básicos de Ruby y su servidor Rack. Pero por sobre todas las cosas necesita que perdamos el miedo a la línea de comandos ya que todo el trabajo se debe hacer desde un editor de textos normal y comandos en la consola.</p>
+<p>Octopress ofrece un template básico muy bien logrado que representa un gran avance sobre Jekyll, adicionalmente existen muchos templates de terceros que son muy fáciles de utilizar, sin embargo,  por el momento he decidido mantenerme con el template estándar y sólo hacer algunos ajustes básicos. De todos estos ajustes considero que vale la pena comentar sobre los siguientes:</p>
+<h2 id="cambio-de-color-de-background-de-los-bloques-de-c-digo">Cambio de color de background de los bloques de código</h2>
+<p>Por defecto Octopress utiliza Solarized el cual tiene 2 templates &quot;dark&quot; y &quot;light&quot;, el primero es muy oscuro y el segundo es un color entre amarillo que personalmente no es de mi agrado. Para cambiar este color simplemente hay editar el archivo <code>/sass/custom/_colors.scss</code> y quitar el comentario a <code>$solarized</code> y a las variables <code>$base2</code> y <code>base3</code>, a las cuales podemos cambiar los valores deseados</p>
+<h5 id="-sass-custom-_colors-scss">/sass/custom/_colors.scss</h5>
+<pre class="highlight"><code class="hljs undefined">$solarized: light;
+$base2:             #dddddd;
+$base3:             #f0f0f0;
+{% endcodeblock %}
+</code></pre>
+<p>El folder <code>/sass/custom</code> contiene muchas sugerencias para el cambio de estilo en Octopress, tomen su tiempo y vaya experimentando. Tengan en cuenta que todo cambio  con CSS debe ser hecho en el archivo <code>sass/custom/_styles.scss</code> que es el último en cargarse.</p>
+<h2 id="traducci-n-al-espa-ol">Traducción al español</h2>
+<p>Octopress no cuenta con soporte para <a href="http://es.wikipedia.org/wiki/I18n">i18n</a> por lo que hay que hacer un trabajo manual de reemplazo de todas las etiquetas, los principales archivos a traducir se encuentran en los folders:</p>
+<pre class="highlight"><code class="hljs undefined">/source/custom
+/source/post
+/source/_layout
+</code></pre>
+<p>En cuanto a la traducción, el cambio mas complicado es el de las fechas, para lo cual use como modelo el siguiente código que encontré en <a href="https://github.com/vigo/octopress">github</a></p>
+<p>Para realizar el cambio inicialmente debemos crear los arrays con los valores de los días y meses en español, esto los debemos adicionar el archivo <code>/plugins/date.rb</code></p>
+<h5 id="-plugins-date-rb">/plugins/date.rb</h5>
+<pre class="highlight"><code class="hljs ruby"><span class="hljs-class"><span class="hljs-keyword">module</span> <span class="hljs-title">Octopress</span></span>
+  <span class="hljs-class"><span class="hljs-keyword">module</span> <span class="hljs-title">Date</span></span>
+
+    <span class="hljs-comment"># Days and Months in spanish</span>
+    <span class="hljs-constant">MONTHNAMES_ES</span> = [<span class="hljs-keyword">nil</span>,
+      <span class="hljs-string">"Enero"</span>, <span class="hljs-string">"Febrero"</span>, <span class="hljs-string">"Marzo"</span>, <span class="hljs-string">"Abril"</span>, <span class="hljs-string">"Mayo"</span>, <span class="hljs-string">"Junio"</span>,
+      <span class="hljs-string">"Julio"</span>, <span class="hljs-string">"Agosto"</span>, <span class="hljs-string">"Septiembre"</span>, <span class="hljs-string">"Octubre"</span>, <span class="hljs-string">"Noviembre"</span>, <span class="hljs-string">"Diciembre"</span>]
+    <span class="hljs-constant">ABBR_MONTHNAMES_ES</span> = [<span class="hljs-keyword">nil</span>,
+      <span class="hljs-string">"Ene"</span>, <span class="hljs-string">"Feb"</span>, <span class="hljs-string">"Mar"</span>, <span class="hljs-string">"Abr"</span>, <span class="hljs-string">"May"</span>, <span class="hljs-string">"Jun"</span>,
+      <span class="hljs-string">"Jul"</span>, <span class="hljs-string">"Ago"</span>, <span class="hljs-string">"Sep"</span>, <span class="hljs-string">"Oct"</span>, <span class="hljs-string">"Nov"</span>, <span class="hljs-string">"Dic"</span>]
+    <span class="hljs-constant">DAYNAMES_ES</span> = [<span class="hljs-string">"Domingo"</span>, <span class="hljs-string">"Lunes"</span>, <span class="hljs-string">"Martes"</span>, <span class="hljs-string">"Mi&amp;eacute;rcoles"</span>,
+      <span class="hljs-string">"Jueves"</span>, <span class="hljs-string">"Viernes"</span>, <span class="hljs-string">"S&amp;aacute;bado"</span>]
+    <span class="hljs-constant">ABBR_DAYNAMES_ES</span> = [<span class="hljs-string">"Dom"</span>, <span class="hljs-string">"Lun"</span>, <span class="hljs-string">"Mar"</span>, <span class="hljs-string">"Mi&amp;eacute;"</span>,
+       <span class="hljs-string">"Jue"</span>, <span class="hljs-string">"Vie"</span>, <span class="hljs-string">"S&amp;aacute;b"</span>]
+...
+</code></pre>
+<p>En el mismo archivo localizar la función <code>format_date</code></p>
+<h5 id="-plugins-date-rb">/plugins/date.rb</h5>
+<pre class="highlight"><code class="hljs ruby">...    
+    <span class="hljs-function"><span class="hljs-keyword">def</span> </span>format_date(date, format)
+      date = datetime(date)
+      <span class="hljs-keyword">if</span> format.<span class="hljs-keyword">nil</span>? || format.empty? || format == <span class="hljs-string">"ordinal"</span>
+        date_formatted = ordinalize(date)
+      <span class="hljs-keyword">else</span>
+        date_formatted = date.strftime(format)
+        date_formatted.gsub!(<span class="hljs-regexp">/%o/</span>, ordinal(date.strftime(<span class="hljs-string">'%e'</span>).to_i))
+      <span class="hljs-keyword">end</span>
+      date_formatted
+    <span class="hljs-keyword">end</span>
+...
+</code></pre>
+<p>Y reemplazarla por la siguiente función:</p>
+<h5 id="-plugins-date-rb">/plugins/date.rb</h5>
+<pre class="highlight"><code class="hljs ruby">...    
+    <span class="hljs-function"><span class="hljs-keyword">def</span> </span>format_date(date, format)
+      date = datetime(date)
+      <span class="hljs-keyword">if</span> format.<span class="hljs-keyword">nil</span>? || format.empty? || format == <span class="hljs-string">"ordinal"</span>
+        date_formatted = ordinalize(date)
+      <span class="hljs-keyword">else</span>
+        date_formatted = format.gsub(<span class="hljs-regexp">/%a/</span>, <span class="hljs-constant">ABBR_DAYNAMES_ES</span>[date.wday])
+        date_formatted = date_formatted.gsub(<span class="hljs-regexp">/%A/</span>, <span class="hljs-constant">DAYNAMES_ES</span>[date.wday])
+        date_formatted = date_formatted.gsub(<span class="hljs-regexp">/%b/</span>, <span class="hljs-constant">ABBR_MONTHNAMES_ES</span>[date.mon])
+        date_formatted = date_formatted.gsub(<span class="hljs-regexp">/%B/</span>, <span class="hljs-constant">MONTHNAMES_ES</span>[date.mon])
+        date_formatted = date.strftime(date_formatted)
+      <span class="hljs-keyword">end</span>
+      date_formatted
+    <span class="hljs-keyword">end</span>
+...
+</code></pre>
+<p>Después de este procedimiento todas las fechas de los posts estarán disponibles en español. Así mismo es posible cambiar el formato de presentación en el archivo <code>/_config.yml</code> por ejemplo utilizando la siguiente plantilla:</p>
+<h5 id="-_config-yml">/_config.yml</h5>
+<pre class="highlight"><code class="hljs undefined">date_format: "%d %B %Y"
+</code></pre>
+<p>Esta implementación tiene una falencia que se hace evidente en el la página del Archivo de posts, por el momento mi solución es la presentar el mes en formato numérico cambiando las siguientes líneas en el archivo <code>/source/post/archive_post.html</code></p>
+<h5 id="-source-post-archive_post-html">/source/post/archive_post.html</h5>
+<pre class="highlight"><code class="hljs xml">{% raw %}
+...
+<span class="hljs-tag">&lt;<span class="hljs-title">time</span> <span class="hljs-attribute">datetime</span>=<span class="hljs-value">"{{ post.date | datetime | date_to_xmlschema }}"</span> <span class="hljs-attribute">pubdate</span>&gt;</span>{{ post.date | date: "<span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'month'</span>&gt;</span>%m<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>/<span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'day'</span>&gt;</span>%d<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'year'</span>&gt;</span>%Y<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>"}}<span class="hljs-tag">&lt;/<span class="hljs-title">time</span>&gt;</span>
+...
+{% endraw %}
+</code></pre>
+
+    </section>
+    
+    <footer class="post-footer">
+
+      
+      <figure class="author-image">
+        <a class="img" href="" style="background-image: url(/img/logo.png)"><span class="hidden">Alfonso Vacaflores's Picture</span></a>
+      </figure>
+      
+
+      <section class="author">
+        <h4><a href="">Alfonso Vacaflores</a></h4>
+
+        
+        <div class="author-meta">
+          
+          <span class="author-location icon-location">Tarija, Bolivia</span>
+          
+          
+        </div>
+      </section>
+
+      <section class="share">
+        <h4>Compartir</h4>
+        <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Hacking%20Octopress&amp;url="
+          onclick="window.open(this.href + window.location.href, 'twitter-share', 'width=550,height=235');return false;">
+          <span class="hidden">Twitter</span>
+        </a>
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u="
+          onclick="window.open(this.href + window.location.href, 'facebook-share','width=580,height=296');return false;">
+          <span class="hidden">Facebook</span>
+        </a>
+        <a class="icon-google-plus" href="https://plus.google.com/share?url="
+          onclick="window.open(this.href + window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <span class="hidden">Google+</span>
+        </a>
+      </section>
+
+    </footer>
+
+  </article>
+</main>
+
+<aside class="read-next">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+        <a class="read-next-story" style="background-image: url(/img/picyaml.png)" href="/posts/archivos-yaml-para guardar-parametros-en-rails.html">
+          <section class="post">
+            <h2>Archivos YAML para guardar parámetros en Rails</h2>
+            <p>Toda aplicación tiene parámetros de configuración que conviene que estén parametrizados para evitar repetición en el código y para&hellip;</p>
+          </section>
+        </a>
+      
+      
+        <a class="read-next-story prev" style="background-image: url(/img/rails.jpg)" href="/posts/scopes-in-rails-4.html">
+          <section class="post">
+            <h2>Scopes en Rails 4</h2>
+            <p>Rails es un framework muy flexible, existen muchas tareas que se las pueden hacer de diferentes maneras, sin embargo&hellip;</p>
+          </section>
+        </a>
+      
+    
+  
+    
+  
+    
+  
+</aside>
+
+      <footer class="site-footer clearfix">
+      	<div class="tagcloud">
+	
+		<a href="/tags/android.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> android </a>
+	
+		<a href="/tags/asynctaks.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> asynctaks </a>
+	
+		<a href="/tags/bi.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> bi </a>
+	
+		<a href="/tags/blog.html" data-tag-count="3" data-tag-weight="0.7924812503605781" style="font-size: 358.49625007211563%;"> blog </a>
+	
+		<a href="/tags/docpad.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> docpad </a>
+	
+		<a href="/tags/games.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> games </a>
+	
+		<a href="/tags/general.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> general </a>
+	
+		<a href="/tags/git.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> git </a>
+	
+		<a href="/tags/ios.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> ios </a>
+	
+		<a href="/tags/java.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> java </a>
+	
+		<a href="/tags/json.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> json </a>
+	
+		<a href="/tags/movil.html" data-tag-count="3" data-tag-weight="0.7924812503605781" style="font-size: 358.49625007211563%;"> movil </a>
+	
+		<a href="/tags/node-js.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> node.js </a>
+	
+		<a href="/tags/objective-c.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> objective-c </a>
+	
+		<a href="/tags/octopress.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> octopress </a>
+	
+		<a href="/tags/rails.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> rails </a>
+	
+		<a href="/tags/reportes.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> reportes </a>
+	
+		<a href="/tags/ruby.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> ruby </a>
+	
+		<a href="/tags/spritekit.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> spritekit </a>
+	
+		<a href="/tags/ssrs.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> ssrs </a>
+	
+		<a href="/tags/swift.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> swift </a>
+	
+		<a href="/tags/vbasic.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> vbasic </a>
+	
+		<a href="/tags/web.html" data-tag-count="4" data-tag-weight="1" style="font-size: 400%;"> web </a>
+	
+		<a href="/tags/yaml.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> yaml </a>
+	
+</div>
+        <section class="copyright"><a href="index.html">Alfonso Vacaflores</a> &copy; 2016</section>
+        <section class="poweredby">Powered by <a href="https://docpad.org">DocPad</a></section>
+      </footer>
+
+    </div>
+    <script defer="defer"  src="//code.jquery.com/jquery-2.1.4.min.js"></script><script defer="defer"  src="/js/jquery.fitvids.js"></script><script defer="defer"  src="/js/index.js"></script>
+  </body>
+</html>

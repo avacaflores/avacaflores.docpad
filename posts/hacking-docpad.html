@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Hacking DocPad | Por puro gusto</title>
+    <meta name="description" content="" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link  rel="stylesheet" href="/css/screen.css" /><link  rel="stylesheet" href="/css/railscasts.css" /><link  rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <meta name="generator" content="Docpad 6.x" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Rock+Salt" />
+  </head>
+  <body class="post-template nav-closed">
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+      <span class="hidden">Close</span>
+    </a>
+    <ul>
+      
+        <li class="nav-any" role="presentation">
+          <a href="/">Blog</a>
+        </li>
+      
+        <li class="nav-any" role="presentation">
+          <a href="/about.html">Acerca de...</a>
+        </li>
+      
+        <li class="nav-any" role="presentation">
+          <a href="/recursos.html">Recursos</a>
+        </li>
+      
+        <li class="nav-any" role="presentation">
+          <a href="/proyectos.html">Proyectos</a>
+        </li>
+      
+    </ul>
+</div>
+<span class="nav-cover"></span>
+    <div class="site-wrapper">
+    
+      <header class="main-header post-head" style="background-image: url(/img/docpad.png)">
+  
+    
+  <nav class="main-nav overlay clearfix">
+    
+    
+      <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+       
+  </nav>
+</header>
+
+<main class="content" role="main">
+  <article class="post">
+
+    <header class="post-header">
+      <h1 class="post-title">Hacking DocPad</h1>
+      <section class="post-meta">
+        
+        <time class="post-date" datetime="2015-septiembre-13">13 septiembre 2015</time> | 
+  <a href="/tags/docpad.html">docpad</a>, 
+
+  <a href="/tags/node.js.html">node.js</a>, 
+
+  <a href="/tags/blog.html">blog</a>, 
+
+  <a href="/tags/web.html">web</a>
+
+      </section>
+    </header>
+    
+    <section class="post-content">
+      <p>La primera versión de este blog fue desarrollada en <strong>Octopress</strong>, una plataforma muy interesante pero poco ágil desarrollada sobre JeKyII. Todos los procesos de actualización se sentían muy pesados y los tenia que re-descubrir cada vez que quería aumentar un post. Adicionalmente note que Octopress no estaba siendo actualizado ya que la versión disponible era de 2011, el sitio de Octopress anuncia desde hace varios meses una nueva versión pero esta no llega todavía.</p>
+<p>Estas situaciones me obligaron a buscar una nueva plataforma de generación de sitios estáticos, es en esta búsqueda que encontré <a href="http://docpad.org">DocPad</a>, que es una plataforma basada en node.js, es una plataforma de generación de sitios estáticos muy fácil de adaptar mediante plugins. Un factor decisivo en la elección fue ver que las actualizaciones era bastante recientes y que cuenta con una comunidad muy activa.</p>
+<p>El proceso de migración fue bastante simple &quot;en realidad no había mucho que migrar del sitio antrior :-)&quot;, sin embargo como en todo desarrollo web la parte de diseño fue mi principal obstáculo.</p>
+<h3 id="primer-paso">Primer paso</h3>
+<p>El primer paso después de la instalación propia del sistema fue la instalación de una plantilla o <strong>skeleton</strong> la escogida después de muchas pruebas fue: <a href="https://github.com/docpad/docpad-skeleton-casper">Casper</a>. Este skeleton no forma parte de los básicos que se pueden instalar con el sistema, sin embargo me parecio baste adecuado. Encontre varias fallas en el código, pero en líneas geneales el skeleton esta muy bien logrado.</p>
+<h3 id="segundo-paso">Segundo paso</h3>
+<p>Fue enlazar mi repositorio Git a <strong>GitHub Pages</strong>, un proceso que sorprendentemente me tomo bastante tiempo pero por surte resulto siendo bastante sencillo “cuando encuentras la configuración correcta”</p>
+<h3 id="tercer-paso">Tercer paso</h3>
+<p>En ese momento tome un par de días para entender los alcances del skeleton y como podría modificarlo para darle un toque personal, hice modificaciones al formato de fecha, traducción de algunos etiquetas al español, y principalmente cambios estéticos en el estilo.También optimice bastante los <em>partials</em> y <em>layouts</em> que venían en el skeleton.</p>
+<p>En este momento puedo decir que estoy bastante satisfecho con lo que he aprendido y las modificaciones que he realizado, estoy muy lejos todavía de conocer los detalles internos de la plataforma pero estoy bien encaminado. </p>
+<p>El código de todo este blog se encuentra disponible en un repositorio en <a href="https://github.com/avacaflores/avacaflores.github.io">GitHub</a></p>
+<p>En los siguientes días estaré comentado algunas de las principales modificaciones que he realizado.</p>
+
+    </section>
+    
+    <footer class="post-footer">
+
+      
+      <figure class="author-image">
+        <a class="img" href="" style="background-image: url(/img/logo.png)"><span class="hidden">Alfonso Vacaflores's Picture</span></a>
+      </figure>
+      
+
+      <section class="author">
+        <h4><a href="">Alfonso Vacaflores</a></h4>
+
+        
+        <div class="author-meta">
+          
+          <span class="author-location icon-location">Tarija, Bolivia</span>
+          
+          
+        </div>
+      </section>
+
+      <section class="share">
+        <h4>Compartir</h4>
+        <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Hacking%20DocPad&amp;url="
+          onclick="window.open(this.href + window.location.href, 'twitter-share', 'width=550,height=235');return false;">
+          <span class="hidden">Twitter</span>
+        </a>
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u="
+          onclick="window.open(this.href + window.location.href, 'facebook-share','width=580,height=296');return false;">
+          <span class="hidden">Facebook</span>
+        </a>
+        <a class="icon-google-plus" href="https://plus.google.com/share?url="
+          onclick="window.open(this.href + window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <span class="hidden">Google+</span>
+        </a>
+      </section>
+
+    </footer>
+
+  </article>
+</main>
+
+<aside class="read-next">
+  
+    
+  
+    
+  
+    
+  
+    
+      
+        <a class="read-next-story" style="background-image: url(/img/git.jpg)" href="/posts/git-shortcuts.html">
+          <section class="post">
+            <h2>Git shortcuts</h2>
+            <p>Git es un mundo lleno de comandos que deben ser utilizados en la consola, se me hace muy difícil&hellip;</p>
+          </section>
+        </a>
+      
+      
+        <a class="read-next-story prev" style="background-image: url(/img/android.png)" href="/posts/android-asynctaks.html">
+          <section class="post">
+            <h2>Conectando un servicio JSON en Android</h2>
+            <p>Desde hace varios años estoy dedicado &quot;en mi tiempo libre&quot; a la programación móvil especialmente en la plataforma iOS,&hellip;</p>
+          </section>
+        </a>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</aside>
+
+      <footer class="site-footer clearfix">
+      	<div class="tagcloud">
+	
+		<a href="/tags/android.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> android </a>
+	
+		<a href="/tags/asynctaks.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> asynctaks </a>
+	
+		<a href="/tags/bi.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> bi </a>
+	
+		<a href="/tags/blog.html" data-tag-count="3" data-tag-weight="0.7924812503605781" style="font-size: 358.49625007211563%;"> blog </a>
+	
+		<a href="/tags/docpad.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> docpad </a>
+	
+		<a href="/tags/games.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> games </a>
+	
+		<a href="/tags/general.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> general </a>
+	
+		<a href="/tags/git.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> git </a>
+	
+		<a href="/tags/ios.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> ios </a>
+	
+		<a href="/tags/java.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> java </a>
+	
+		<a href="/tags/json.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> json </a>
+	
+		<a href="/tags/movil.html" data-tag-count="3" data-tag-weight="0.7924812503605781" style="font-size: 358.49625007211563%;"> movil </a>
+	
+		<a href="/tags/node-js.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> node.js </a>
+	
+		<a href="/tags/objective-c.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> objective-c </a>
+	
+		<a href="/tags/octopress.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> octopress </a>
+	
+		<a href="/tags/rails.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> rails </a>
+	
+		<a href="/tags/reportes.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> reportes </a>
+	
+		<a href="/tags/ruby.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> ruby </a>
+	
+		<a href="/tags/spritekit.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> spritekit </a>
+	
+		<a href="/tags/ssrs.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> ssrs </a>
+	
+		<a href="/tags/swift.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> swift </a>
+	
+		<a href="/tags/vbasic.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> vbasic </a>
+	
+		<a href="/tags/web.html" data-tag-count="4" data-tag-weight="1" style="font-size: 400%;"> web </a>
+	
+		<a href="/tags/yaml.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> yaml </a>
+	
+</div>
+        <section class="copyright"><a href="index.html">Alfonso Vacaflores</a> &copy; 2016</section>
+        <section class="poweredby">Powered by <a href="https://docpad.org">DocPad</a></section>
+      </footer>
+
+    </div>
+    <script defer="defer"  src="//code.jquery.com/jquery-2.1.4.min.js"></script><script defer="defer"  src="/js/jquery.fitvids.js"></script><script defer="defer"  src="/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Por puro gusto]]></title>
+        <description><![CDATA[Por puro gusto]]></description>
+        <link>index.html</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Mon, 14 Sep 2015 02:36:32 GMT</lastBuildDate>
+        <atom:link href="index.html/rss.xml" rel="self" type="application/rss+xml"/>
+        <author><![CDATA[ALFONSO VACAFLORES]]></author>
+        <pubDate>Mon, 14 Sep 2015 02:34:31 GMT</pubDate>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[
+
+    
+    
+    <div class="archive">
+        
+            <div class="archive-year">2015</div>
+            
+        
+        <div class="archive-title"><a href="/posts/git-shortcuts.html">Git shortcuts</a></div>
+        
+            <div class="archive-tags">
+                <p>
+                    Sep 7 | Posted in
+                        
+                            <a id="post-category" href="/tags/git.html">git</a>
+                        
+                </p>
+            </div>
+        
+    </div>
+
+    
+    
+    <div class="archive">
+        
+            <div class="archive-year">2014</div>
+            
+        
+        <div class="archive-title"><a href="/posts/removiendo-sknode-en-ios-8.html">Removiendo SKNode en iOS 8</a></div>
+        
+            <div class="archive-tags">
+                <p>
+                    Jul 30 | Posted in
+                        
+                            <a id="post-category" href="/tags/objective-c.html">objective-c</a>
+                        
+                            <a id="post-category" href="/tags/spritekit.html">spritekit</a>
+                        
+                </p>
+            </div>
+        
+    </div>
+
+    
+    
+    <div class="archive">
+        
+        <div class="archive-title"><a href="/posts/plist-en-swift.html">plist en Swift</a></div>
+        
+            <div class="archive-tags">
+                <p>
+                    Jun 12 | Posted in
+                        
+                            <a id="post-category" href="/tags/swift.html">swift</a>
+                        
+                </p>
+            </div>
+        
+    </div>
+
+    
+    
+    <div class="archive">
+        
+        <div class="archive-title"><a href="/posts/scopes-in-rails-4.html">Scopes en Rails 4</a></div>
+        
+            <div class="archive-tags">
+                <p>
+                    May 23 | Posted in
+                        
+                            <a id="post-category" href="/tags/rails.html">rails</a>
+                        
+                            <a id="post-category" href="/tags/ruby.html">ruby</a>
+                        
+                </p>
+            </div>
+        
+    </div>
+
+    
+    
+    <div class="archive">
+        
+        <div class="archive-title"><a href="/posts/hacking-octopress.html">Hacking Octopress</a></div>
+        
+            <div class="archive-tags">
+                <p>
+                    May 16 | Posted in
+                        
+                            <a id="post-category" href="/tags/octopress.html">octopress</a>
+                        
+                            <a id="post-category" href="/tags/ruby.html">ruby</a>
+                        
+                </p>
+            </div>
+        
+    </div>
+
+    
+    
+    <div class="archive">
+        
+        <div class="archive-title"><a href="/posts/archivos-yaml-para guardar-parametros-en-rails.html">Archivos YAML para guardar parámetros en Rails</a></div>
+        
+            <div class="archive-tags">
+                <p>
+                    May 13 | Posted in
+                        
+                            <a id="post-category" href="/tags/rails.html">rails</a>
+                        
+                </p>
+            </div>
+        
+    </div>
+
+    
+    
+    <div class="archive">
+        
+        <div class="archive-title"><a href="/posts/sobre-este-blog.html">Sobre este blog</a></div>
+        
+            <div class="archive-tags">
+                <p>
+                    May 9 | Posted in
+                        
+                            <a id="post-category" href="/tags/general.html">general</a>
+                        
+                </p>
+            </div>
+        
+    </div>
+]]></description>
+            <link>index.html/archive.html</link>
+            <guid isPermaLink="true">index.html/archive.html</guid>
+            <dc:creator><![CDATA[ALFONSO VACAFLORES]]></dc:creator>
+            <pubDate>Mon, 14 Sep 2015 02:36:19 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[No title]]></title>
+            <description><![CDATA[<header class="main-header" style="background-image: url(/img/keyboardnight.jpg)">
+	<nav class="main-nav overlay clearfix">
+		
+			<a class="blog-logo" href="index.html"> <img src="/img/logo.png" alt="Por puro gusto" /></a>
+			<div class="blog-author">ALFONSO VACAFLORES</div>
+		
+		
+			<a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+		
+	</nav>
+	<div class="vertical">
+		<div class="main-header-content inner">
+			<h1 class="page-title">Por puro gusto</h1>
+			<h2 class="page-description">Tecnología, programación y un poco de electrónica</h2>
+		</div>
+	</div>
+	<a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+
+<main id="content" class="content" role="main">
+	
+	
+		<article class="post">
+	<header class="post-header">
+		<h2 class="post-title"><a href="/posts/git-shortcuts.html">Git shortcuts</a></h2>
+	</header>
+	<section class="post-excerpt">
+		<p>
+			Git es un mundo lleno de comandos que deben ser utilizados en la consola, se me hace muy difícil poder recordar muchos de ellos y termino <a class="read-more" href="/posts/git-shortcuts.html">&raquo;</a>
+		</p>
+	</section>
+	<footer class="post-meta">
+		
+		
+		  
+  <a href="/tags/git.html">git</a>
+
+		
+		<time class="post-date" datetime="2015-Septiembre-07">
+			07 Septiembre 2015
+		</time>
+	</footer>
+</article>
+	
+		<article class="post">
+	<header class="post-header">
+		<h2 class="post-title"><a href="/posts/removiendo-sknode-en-ios-8.html">Removiendo SKNode en iOS 8</a></h2>
+	</header>
+	<section class="post-excerpt">
+		<p>
+			La nueva versión de Xcode 6 trae muchos cambios entre ellos algunos que mas bien parecerían ser errores, tal es el caso de la función `removeFromParent` <a class="read-more" href="/posts/removiendo-sknode-en-ios-8.html">&raquo;</a>
+		</p>
+	</section>
+	<footer class="post-meta">
+		
+		
+		  
+  <a href="/tags/objective-c.html">objective-c</a>, 
+
+  <a href="/tags/spritekit.html">spritekit</a>
+
+		
+		<time class="post-date" datetime="2014-Julio-30">
+			30 Julio 2014
+		</time>
+	</footer>
+</article>
+	
+		<article class="post">
+	<header class="post-header">
+		<h2 class="post-title"><a href="/posts/plist-en-swift.html">plist en Swift</a></h2>
+	</header>
+	<section class="post-excerpt">
+		<p>
+			La presentación del nuevo leguaje de programación Swift a despertado a un grupo muy grande programadores y no programadores, todos ansiosos por experimentar con el nuevo <a class="read-more" href="/posts/plist-en-swift.html">&raquo;</a>
+		</p>
+	</section>
+	<footer class="post-meta">
+		
+		
+		  
+  <a href="/tags/swift.html">swift</a>
+
+		
+		<time class="post-date" datetime="2014-Junio-12">
+			12 Junio 2014
+		</time>
+	</footer>
+</article>
+	
+		<article class="post">
+	<header class="post-header">
+		<h2 class="post-title"><a href="/posts/scopes-in-rails-4.html">Scopes en Rails 4</a></h2>
+	</header>
+	<section class="post-excerpt">
+		<p>
+			Rails es un framework muy flexible, existen muchas tareas que se las pueden hacer de diferentes maneras, sin embargo esta flexibilidad se ve empañada por la <a class="read-more" href="/posts/scopes-in-rails-4.html">&raquo;</a>
+		</p>
+	</section>
+	<footer class="post-meta">
+		
+		
+		  
+  <a href="/tags/rails.html">rails</a>, 
+
+  <a href="/tags/ruby.html">ruby</a>
+
+		
+		<time class="post-date" datetime="2014-Mayo-23">
+			23 Mayo 2014
+		</time>
+	</footer>
+</article>
+	
+		<article class="post">
+	<header class="post-header">
+		<h2 class="post-title"><a href="/posts/hacking-octopress.html">Hacking Octopress</a></h2>
+	</header>
+	<section class="post-excerpt">
+		<p>
+			Octopress es un framework para páginas estáticas basado en Jekyll, sin lugar a duda es una excelente y divertida manera de publicar un blog o página <a class="read-more" href="/posts/hacking-octopress.html">&raquo;</a>
+		</p>
+	</section>
+	<footer class="post-meta">
+		
+		
+		  
+  <a href="/tags/octopress.html">octopress</a>, 
+
+  <a href="/tags/ruby.html">ruby</a>
+
+		
+		<time class="post-date" datetime="2014-Mayo-16">
+			16 Mayo 2014
+		</time>
+	</footer>
+</article>
+	
+		<article class="post">
+	<header class="post-header">
+		<h2 class="post-title"><a href="/posts/archivos-yaml-para guardar-parametros-en-rails.html">Archivos YAML para guardar parámetros en Rails</a></h2>
+	</header>
+	<section class="post-excerpt">
+		<p>
+			Toda aplicación tiene parámetros de configuración que conviene que estén parametrizados para evitar repetición en el código y para tener la facilidad de cambiar los mismos <a class="read-more" href="/posts/archivos-yaml-para guardar-parametros-en-rails.html">&raquo;</a>
+		</p>
+	</section>
+	<footer class="post-meta">
+		
+		
+		  
+  <a href="/tags/rails.html">rails</a>
+
+		
+		<time class="post-date" datetime="2014-Mayo-13">
+			13 Mayo 2014
+		</time>
+	</footer>
+</article>
+	
+
+	<nav class="pagination" role="navigation">
+
+  
+  
+  	<span class="page-number">Página 1 of 2</span>
+  
+
+
+  
+    <a class="older-posts" href="/2/index.html">Anteriores →</a>
+  
+
+</nav>
+</main>]]></description>
+            <link>index.html/index.html</link>
+            <guid isPermaLink="true">index.html/index.html</guid>
+            <dc:creator><![CDATA[ALFONSO VACAFLORES]]></dc:creator>
+            <pubDate>Mon, 14 Sep 2015 02:34:37 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Alfonso Vacaflores]]></title>
+            <description><![CDATA[<p>Soy un boliviano amante  de la tecnología, creo firmemente que cuando tu trabajo y tu hobby son lo mismo, disfrutarás lo que haces cada día y sentirás que dejaste de trabajar.</p>
+<p>He pasado por varias etapas en vida tecnológica, pueden encontrar mi <a href="/files/CV_avacaflores_EN.pdf">Curriculum Vitae</a> para los detalles mas formales y para todos esos otros detalles curiosos esta la siguiente sección.</p>
+<h2 id="mi-historia-con-la-tecnolog-a">Mi historia con la tecnología</h2>
+<p>Mi historia con la tecnología empezó hace muchos años, se puede decir que soy parte de una generación privilegiada ya que pude vivir la gran transición de la informática desde los años ochenta. Hoy en día puedo apreciar lo que son los juegos de realidad virtual y animaciones en 3D y compararlos con la simplicidad de los juegos de mi época, cuando el lograr que una línea se mueva en la pantalla era un gran logro.</p>
+<h3 id="primeros-pasos">Primeros pasos</h3>
+<p><img src="/img/EpsonQX-10.jpg" alt="img" title="Epson QX-10">
+A mediados de los ochenta la primera computadora que tuve en casa fue una Epson QX-10, la cual tenía un procesador Z80 con  un sistema operativo CP/M-80, por lo cual no era una computadora IBM PC compatible, este detalle que en ese momento no era relevante me obligo a ingresar en el mundo de la tecnología por la ruta más complicada. 
+<img src="/img/AmstradPC1512.jpg" alt="img" title="Amstrad PC1512">
+Después de algunos años tuve mi segunda computara, esta vez una PC compatible marca Amstrad PC1512 que tenía un procesador 8086 y sólo 512Kb de memoria RAM, este equipo me abrió muchos caminos ya que pude compartir experiencias y software con otras personas, también me ayudo a aprender algo de hardware ya que uno de mis primeros retos fue la instalación de un disco duro de 20MB.</p>
+<h3 id="estudio">Estudio</h3>
+<p>A principios de los noventa fui a la universidad en La Paz para estudiar Informática. Ahí ingrese en el mundo de los clones, primero con equipos 386, 486 y luego Pentium en todos los modelos y sabores (las fotos son irrelevantes verdad?). Sin duda toda la teoría que recibí durante todos esos años son la base de todo mi conocimiento. En este periodo también tuve mis primeras experiencias de programación en C, dBase III Plus y Fox Pro. Tuve también varios trabajos de consultoría para el desarrollo de software.</p>
+<h3 id="soporte">Soporte</h3>
+<p>En 1996 aún antes de haber concluido la universidad ingrese a trabajar a Dima Ltda en el departamento de soporte, fue una experiencia muy importante que me permitió estar en contacto con todo lo último en tecnología de PCs, servidores y redes de esa época. De cierta manera este trabajo oriento mi carrera profesional al área de soporte de IT.</p>
+<h3 id="unicef">UNICEF</h3>
+<p>En 1998 ingresé a UNICEF y continué el camino del soporte de IT dejando de lado completamente mis años de programador, donde tuve la oportunidad de trabajar en muchos países en diferentes posiciones siempre brindando soporte en toda la infraestructura de IT que en muchos casos va desde los generados eléctricos hasta los enlaces VSAT pasando por cableado estructurado, centrales telefónicas, teléfonos satelitales, etc.</p>
+<h3 id="smartphones">Smartphones</h3>
+<p><img src="/img/PalmTreo600.jpg" alt="img" title="Palm Treo 600">
+Mi primer smartphone fue una Palm Treo 600, que luego de algún tiempo fue reemplazado por un iPhone en el 2008. A partir de ahí he ido avanzando paso a paso por todos los modelos de iPhone que se han producido y sin duda es algo que lo seguiré haciendo. Sólo tuve un periodo oscuro en este tema y fue entre el 2011 y el 2012 cuando por estándares de la organización tuve que instalar servidores Blackberry y por supuesto usar uno, si bien esto fue en la época de oro de Blackberry fue un retroceso en mi camino, afortunadamente sólo duro un año y algunos meses.</p>
+<h3 id="la-luz">La luz</h3>
+<p><img src="/img/Tunnel.png" alt="img">
+En el 2011 luego de dar muchas vueltas y de haber resistido por muchos años al cambio, sentí que necesitaba algo nuevo en mi vida, decidí que debía dar el gran paso... compré una MacBook Pro! Fue un momento decisivo en mi vida tecnológica, abrí los ojos y pude ver la luz, me permitió ingresar por muchas puertas que hasta ese momento estaban ocultas. El periodo de adaptación no es fácil especialmente cuando debes vivir en el lado oscuro durante el día y ver la luz sólo por las noches.</p>
+<h3 id="doble-vida">Doble vida</h3>
+<p>En mi insaciable búsqueda de nuevas emociones en el 2012 decidí que debía volver a mi origen de programador, esto significó que durante el día mi trabajo era completamente Microsoft dedicado a Business Inteligence y por las noches era Apple dedicado a redescubrir la programación que había dejado 15 años atrás. Esta doble vida me ha traído un sinfín de satisfacciones, por una parte está el diseño y programación de productos de Business Intelligence y por otro lado he ingresado en nuevos mundos como la programación para iOS y la programación web con Ruby on Rails.</p>
+<p>Para ver los proyectos en los que estoy trabajando o en los que he trabajado recientemente esta la sección de <a href="/projects/index.html">Proyectos</a></p>
+]]></description>
+            <link>index.html/about.html</link>
+            <guid isPermaLink="true">index.html/about.html</guid>
+            <dc:creator><![CDATA[ALFONSO VACAFLORES]]></dc:creator>
+            <pubDate>Mon, 14 Sep 2015 00:55:05 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Recursos]]></title>
+            <description><![CDATA[<p>Esta seccion será dinámica, listaré mis mejores recursos (libros, videos, podcasts, blogs, etc). Todo estará clasificado por temas.</p>
+<h4 id="tecnolog-a-en-general">Tecnología en General</h4>
+<p><strong>Podcasts</strong>  </p>
+<ul>
+<li><a href="https://itunes.apple.com/us/podcast/tech-weekly/id270424643?mt=2">Tech Weekly (the guardian)</a>  </li>
+<li><a href="https://itunes.apple.com/us/podcast/techstuff/id282795787?mt=2">TechStuff (HowStuffWorks.com)</a>  </li>
+</ul>
+<h4 id="ios-y-objective-c">iOS y Objective-C</h4>
+<p><strong>Cursos en video</strong>  </p>
+<ul>
+<li><a href="https://itunes.apple.com/us/course/developing-ios-7-apps-for/id733644550">Developing iOS 7 Apps for iPhone and iPad (Stanford CS193p)</a>  </li>
+</ul>
+<p><strong>Libros</strong>   </p>
+<ul>
+<li><a href="http://www.amazon.com/Programming-Objective-C-Edition-Developers-Library/dp/0321967607">Programing in Objective-C (Stephen G. Kochan)</a>  </li>
+<li><a href="http://www.amazon.com/Objective-C-Programming-Ranch-Guide-Guides/dp/032194206X">Objective-C Programming - The Big Nerd Ranch Guide (Aaron Hillegass/Mikey Ward)</a>  </li>
+<li><a href="http://www.amazon.com/Foundation-iPhone-App-Development-Build/dp/1430243740">Foundation iPhone App Development (Nick Kuh)</a>  </li>
+<li><a href="http://www.amazon.com/iOS-Programming-Ranch-Guide-Guides/dp/0321942051">iOS Programming - The Big Nerd Ranch Guide (Joe Conway/Aaron Hillegass)</a>  </li>
+</ul>
+<h4 id="ruby-ruby-on-rails">Ruby &amp; Ruby on Rails</h4>
+<p><strong>Videos</strong>  </p>
+<ul>
+<li><a href="http://www.railscasts.com">Railscasts (Ryan Bates)</a>  </li>
+</ul>
+<p><strong>Libros</strong>  </p>
+<ul>
+<li><a href="http://www.amazon.com/Agile-Development-Rails-Facets-Ruby/dp/1937785564">Agile Web Development with Rails 4(Sam Ruby/Dave Thomas/David Heinemeier Hansson)</a>  </li>
+<li><a href="http://www.amazon.com/Beginning-Rails-Experts-Voice-Development/dp/1430260343">Beginning Rails 4 (Adam Gamble/Cloves Carneiro Jr/Rida Al Barazi)</a>  </li>
+<li><a href="http://www.railstutorial.org">Ruby on Rails Tutorial</a>  </li>
+</ul>
+<h4 id="javascript-jquery-css">Javascript &amp; jQuery &amp; CSS</h4>
+<h4 id="mobile-design">Mobile design</h4>
+<h4 id="business-intelligence">Business Intelligence</h4>
+<h4 id="electronica-arduino">Electronica &amp; Arduino</h4>
+<p><strong>Libros</strong>  </p>
+<ul>
+<li><a href="http://www.amazon.com/Make-Electronics-Discovery-Charles-Platt/dp/0596153740">Make: Electronics (Charles Platt)</a>  </li>
+<li><a href="http://www.amazon.com/Arduino-Workshop-Hands--Introduction-Projects/dp/1593274483">Arduino Workshop: A Hands-On Introduction with 65 Projects (John Boxall)</a></li>
+</ul>
+]]></description>
+            <link>index.html/recursos.html</link>
+            <guid isPermaLink="true">index.html/recursos.html</guid>
+            <dc:creator><![CDATA[ALFONSO VACAFLORES]]></dc:creator>
+            <pubDate>Mon, 14 Sep 2015 00:55:05 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Proyectos]]></title>
+            <description><![CDATA[<h3 id="bicho">Bicho</h3>
+<p><img src="/img/Bicho.png" alt="img"></p>
+<ul>
+<li>Juego 2D  </li>
+<li>Desarrollado en Objective-C/Xcode/SpriteKit  </li>
+<li>Enlace al <a href="https://itunes.apple.com/us/app/bicho/id896508584?mt=8">AppStore</a></li>
+</ul>
+<h3 id="garaje4x4">garaje4x4</h3>
+<p><img src="/img/garaje4x4.png" alt="img"></p>
+<ul>
+<li>Portal web de presentación de productos desarrollado en Ruby on Rails    </li>
+<li>Enlace al sitio <a href="https://garaje4x4.herokuapp.com">garaje4x4</a>   </li>
+<li>Repositorio en <a href="http://avacaflores.github.com/store">Github</a>    </li>
+</ul>
+<h3 id="global-dashboard">Global Dashboard</h3>
+<p><img src="/img/Gbldash.png" alt="img"></p>
+<ul>
+<li>Dashboard web para la oficina del director ejecutivo  </li>
+<li>Business Intelligence en UNICEF  </li>
+<li>Desarrollado en SSRS 2008 R2/Sharepoint</li>
+</ul>
+<h3 id="finance-administration-dashboard">Finance &amp; Administration Dashboard</h3>
+<p><img src="/img/DFAMDash.png" alt="img">  </p>
+<ul>
+<li>Dashboard web para la sección de Finanzas y Administración  </li>
+<li>Business Intelligence en UNICEF  </li>
+<li>Desarrollado en SSRS 2008 R2/Sharepoint</li>
+</ul>
+<p><hr></p>
+<h2 id="otros-proyectos">Otros Proyectos</h2>
+<h3 id="user-audit">User Audit</h3>
+<p><img src="/img/UserAudit.png" alt="img">  </p>
+<ul>
+<li>Dashboard para la auditoría de acceso de usuarios a inSight  </li>
+<li>Business Intelligence en UNICEF  </li>
+<li>Desarrollado en QlikView</li>
+</ul>
+<h3 id="secure-hint">Secure Hint</h3>
+<p><img src="/img/SecureHint.png" alt="img">  </p>
+<ul>
+<li>Applicación movil para la gestión de passwords  </li>
+<li>Desarrollado en Objective-C/Xcode  </li>
+<li>Enlace al <a href="https://itunes.apple.com/us/app/secure-hint/id730187231?mt=8">AppStore</a></li>
+</ul>
+<h3 id="sample-code-for-sprite-kit">Sample Code For Sprite Kit</h3>
+<p><img src="/img/SampleCode.png" alt="img">  </p>
+<ul>
+<li>Applicación movil que demuestra animaciones 2D basadas en SprikeKit  </li>
+<li>Desarrollado en Objective-C/Xcode/SpriteKit  </li>
+</ul>
+<p><hr></p>
+<h2 id="electr-nica">Electrónica</h2>
+<h3 id="arduino">Arduino</h3>
+<p><img src="/img/Arduino.png" alt="img"> </p>
+<ul>
+<li>Robot Autónomo   </li>
+<li>Arduino Uno    </li>
+<li>Arduino motor shield</li>
+</ul>
+]]></description>
+            <link>index.html/proyectos.html</link>
+            <guid isPermaLink="true">index.html/proyectos.html</guid>
+            <dc:creator><![CDATA[ALFONSO VACAFLORES]]></dc:creator>
+            <pubDate>Mon, 14 Sep 2015 01:56:22 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Archivos YAML para guardar parámetros en Rails]]></title>
+            <description><![CDATA[<p>Toda aplicación tiene parámetros de configuración que conviene que estén parametrizados para evitar repetición en el código y para tener la facilidad de cambiar los mismos en un solo lugar. Lo que en la herga de Rails diríamos: para estar <a href="http://en.wikipedia.org/wiki/Don&#39;t_repeat_yourself">DRY (Don&#39;t Repeat Yourself)</a></p>
+<p>Si bien en una aplicación en Rails se podrían crear variables globales la mejor opción a futuro es la de crear un modelo que guarde toda esta información en la base de datos. Sin embargo esto implicaría crear todas las pantallas y controladores de administración que muchas veces no justifica porque estos valores no cambian con frecuencia.</p>
+<p>Como una solución intermedia al problema se podría usar archivos <strong>YAML</strong>, similares a los que se usa en Rails para la configuración de la base de datos <code>database.yml</code></p>
+<p>Primeramente crearemos el archivo <code>yml</code> que contendrá 3 keys con nuestros parámetros de configuración</p>
+<h5 id="-config-config-yml">/config/config.yml</h5>
+<pre class="highlight"><code class="hljs ruby"><span class="hljs-symbol">store_name:</span> ‘myStore<span class="hljs-string">'
+store_phone: ‘1-212-328-3212‘
+store_email: '</span>mystore<span class="hljs-variable">@gmail</span>.com<span class="hljs-string">'
+</span></code></pre>
+<p>Luego es necesario cargar este archivo al iniciar la aplicación por ejemplo en el <code>/config/application.rb</code></p>
+<h5 id="-config-application-rb">/config/application.rb</h5>
+<pre class="highlight"><code class="hljs ruby"><span class="hljs-constant">CONFIG</span> = <span class="hljs-constant">YAML</span>.load(<span class="hljs-constant">File</span>.read(<span class="hljs-constant">File</span>.expand_path(<span class="hljs-string">'../config.yml'</span>, __FILE_<span class="hljs-number">_</span>)))
+<span class="hljs-constant">CONFIG</span>.symbolize_keys!
+</code></pre>
+<p>La primer línea lee el archivo <code>config.yml</code> y lo convierte en un <strong>hash</strong> que será guardado en la variable <code>CONFIG</code>. La segunda línea habilitará este <strong>hash</strong> para que pueda ser llamado utilizando símbolos como veremos a continuación.</p>
+<p>Desde una vista podremos llamar a nuestros parámetros de la siguiente manera: </p>
+<pre class="highlight"><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-title">%=</span> <span class="hljs-attribute">CONFIG</span>[<span class="hljs-attribute">:store_name</span>] %&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">%=</span> <span class="hljs-attribute">CONFIG</span>[<span class="hljs-attribute">:store_phone</span>] %&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">%=</span> <span class="hljs-attribute">CONFIG</span>[<span class="hljs-attribute">:store_email</span>] %&gt;</span>
+</code></pre>
+<p>Esta es una manera muy sencilla y limpia de usar archivos <strong>YAML</strong> para guardar parámetros de configuración, la cual puede ser extendida para muchos otros usos. Para más información de la sintaxis de los archivos YAML visitar el sitio offical <a href="http://www.yaml.org">http://www.yaml.org</a> o la página de Wikipedia <a href="http://en.wikipedia.org/wiki/YAML">YAML</a>.</p>
+]]></description>
+            <link>index.html/posts/archivos-yaml-para guardar-parametros-en-rails.html</link>
+            <guid isPermaLink="true">index.html/posts/archivos-yaml-para guardar-parametros-en-rails.html</guid>
+            <dc:creator><![CDATA[ALFONSO VACAFLORES]]></dc:creator>
+            <pubDate>Mon, 14 Sep 2015 00:55:05 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Hacking Octopress]]></title>
+            <description><![CDATA[<p>Octopress es un framework para páginas estáticas basado en Jekyll, sin lugar a duda es una excelente y divertida manera de publicar un blog o página personal. Como su eslogan lo dice &quot;A blogging framework for hackers&quot; necesita de ciertos conocimiento básicos de Ruby y su servidor Rack. Pero por sobre todas las cosas necesita que perdamos el miedo a la línea de comandos ya que todo el trabajo se debe hacer desde un editor de textos normal y comandos en la consola.</p>
+<p>Octopress ofrece un template básico muy bien logrado que representa un gran avance sobre Jekyll, adicionalmente existen muchos templates de terceros que son muy fáciles de utilizar, sin embargo,  por el momento he decidido mantenerme con el template estándar y sólo hacer algunos ajustes básicos. De todos estos ajustes considero que vale la pena comentar sobre los siguientes:</p>
+<h2 id="cambio-de-color-de-background-de-los-bloques-de-c-digo">Cambio de color de background de los bloques de código</h2>
+<p>Por defecto Octopress utiliza Solarized el cual tiene 2 templates &quot;dark&quot; y &quot;light&quot;, el primero es muy oscuro y el segundo es un color entre amarillo que personalmente no es de mi agrado. Para cambiar este color simplemente hay editar el archivo <code>/sass/custom/_colors.scss</code> y quitar el comentario a <code>$solarized</code> y a las variables <code>$base2</code> y <code>base3</code>, a las cuales podemos cambiar los valores deseados</p>
+<h5 id="-sass-custom-_colors-scss">/sass/custom/_colors.scss</h5>
+<pre class="highlight"><code class="hljs undefined">$solarized: light;
+$base2:             #dddddd;
+$base3:             #f0f0f0;
+{% endcodeblock %}
+</code></pre>
+<p>El folder <code>/sass/custom</code> contiene muchas sugerencias para el cambio de estilo en Octopress, tomen su tiempo y vaya experimentando. Tengan en cuenta que todo cambio  con CSS debe ser hecho en el archivo <code>sass/custom/_styles.scss</code> que es el último en cargarse.</p>
+<h2 id="traducci-n-al-espa-ol">Traducción al español</h2>
+<p>Octopress no cuenta con soporte para <a href="http://es.wikipedia.org/wiki/I18n">i18n</a> por lo que hay que hacer un trabajo manual de reemplazo de todas las etiquetas, los principales archivos a traducir se encuentran en los folders:</p>
+<pre class="highlight"><code class="hljs undefined">/source/custom
+/source/post
+/source/_layout
+</code></pre>
+<p>En cuanto a la traducción, el cambio mas complicado es el de las fechas, para lo cual use como modelo el siguiente código que encontré en <a href="https://github.com/vigo/octopress">github</a></p>
+<p>Para realizar el cambio inicialmente debemos crear los arrays con los valores de los días y meses en español, esto los debemos adicionar el archivo <code>/plugins/date.rb</code></p>
+<h5 id="-plugins-date-rb">/plugins/date.rb</h5>
+<pre class="highlight"><code class="hljs ruby"><span class="hljs-class"><span class="hljs-keyword">module</span> <span class="hljs-title">Octopress</span></span>
+  <span class="hljs-class"><span class="hljs-keyword">module</span> <span class="hljs-title">Date</span></span>
+
+    <span class="hljs-comment"># Days and Months in spanish</span>
+    <span class="hljs-constant">MONTHNAMES_ES</span> = [<span class="hljs-keyword">nil</span>,
+      <span class="hljs-string">"Enero"</span>, <span class="hljs-string">"Febrero"</span>, <span class="hljs-string">"Marzo"</span>, <span class="hljs-string">"Abril"</span>, <span class="hljs-string">"Mayo"</span>, <span class="hljs-string">"Junio"</span>,
+      <span class="hljs-string">"Julio"</span>, <span class="hljs-string">"Agosto"</span>, <span class="hljs-string">"Septiembre"</span>, <span class="hljs-string">"Octubre"</span>, <span class="hljs-string">"Noviembre"</span>, <span class="hljs-string">"Diciembre"</span>]
+    <span class="hljs-constant">ABBR_MONTHNAMES_ES</span> = [<span class="hljs-keyword">nil</span>,
+      <span class="hljs-string">"Ene"</span>, <span class="hljs-string">"Feb"</span>, <span class="hljs-string">"Mar"</span>, <span class="hljs-string">"Abr"</span>, <span class="hljs-string">"May"</span>, <span class="hljs-string">"Jun"</span>,
+      <span class="hljs-string">"Jul"</span>, <span class="hljs-string">"Ago"</span>, <span class="hljs-string">"Sep"</span>, <span class="hljs-string">"Oct"</span>, <span class="hljs-string">"Nov"</span>, <span class="hljs-string">"Dic"</span>]
+    <span class="hljs-constant">DAYNAMES_ES</span> = [<span class="hljs-string">"Domingo"</span>, <span class="hljs-string">"Lunes"</span>, <span class="hljs-string">"Martes"</span>, <span class="hljs-string">"Mi&amp;eacute;rcoles"</span>,
+      <span class="hljs-string">"Jueves"</span>, <span class="hljs-string">"Viernes"</span>, <span class="hljs-string">"S&amp;aacute;bado"</span>]
+    <span class="hljs-constant">ABBR_DAYNAMES_ES</span> = [<span class="hljs-string">"Dom"</span>, <span class="hljs-string">"Lun"</span>, <span class="hljs-string">"Mar"</span>, <span class="hljs-string">"Mi&amp;eacute;"</span>,
+       <span class="hljs-string">"Jue"</span>, <span class="hljs-string">"Vie"</span>, <span class="hljs-string">"S&amp;aacute;b"</span>]
+...
+</code></pre>
+<p>En el mismo archivo localizar la función <code>format_date</code></p>
+<h5 id="-plugins-date-rb">/plugins/date.rb</h5>
+<pre class="highlight"><code class="hljs ruby">...    
+    <span class="hljs-function"><span class="hljs-keyword">def</span> </span>format_date(date, format)
+      date = datetime(date)
+      <span class="hljs-keyword">if</span> format.<span class="hljs-keyword">nil</span>? || format.empty? || format == <span class="hljs-string">"ordinal"</span>
+        date_formatted = ordinalize(date)
+      <span class="hljs-keyword">else</span>
+        date_formatted = date.strftime(format)
+        date_formatted.gsub!(<span class="hljs-regexp">/%o/</span>, ordinal(date.strftime(<span class="hljs-string">'%e'</span>).to_i))
+      <span class="hljs-keyword">end</span>
+      date_formatted
+    <span class="hljs-keyword">end</span>
+...
+</code></pre>
+<p>Y reemplazarla por la siguiente función:</p>
+<h5 id="-plugins-date-rb">/plugins/date.rb</h5>
+<pre class="highlight"><code class="hljs ruby">...    
+    <span class="hljs-function"><span class="hljs-keyword">def</span> </span>format_date(date, format)
+      date = datetime(date)
+      <span class="hljs-keyword">if</span> format.<span class="hljs-keyword">nil</span>? || format.empty? || format == <span class="hljs-string">"ordinal"</span>
+        date_formatted = ordinalize(date)
+      <span class="hljs-keyword">else</span>
+        date_formatted = format.gsub(<span class="hljs-regexp">/%a/</span>, <span class="hljs-constant">ABBR_DAYNAMES_ES</span>[date.wday])
+        date_formatted = date_formatted.gsub(<span class="hljs-regexp">/%A/</span>, <span class="hljs-constant">DAYNAMES_ES</span>[date.wday])
+        date_formatted = date_formatted.gsub(<span class="hljs-regexp">/%b/</span>, <span class="hljs-constant">ABBR_MONTHNAMES_ES</span>[date.mon])
+        date_formatted = date_formatted.gsub(<span class="hljs-regexp">/%B/</span>, <span class="hljs-constant">MONTHNAMES_ES</span>[date.mon])
+        date_formatted = date.strftime(date_formatted)
+      <span class="hljs-keyword">end</span>
+      date_formatted
+    <span class="hljs-keyword">end</span>
+...
+</code></pre>
+<p>Después de este procedimiento todas las fechas de los posts estarán disponibles en español. Así mismo es posible cambiar el formato de presentación en el archivo <code>/_config.yml</code> por ejemplo utilizando la siguiente plantilla:</p>
+<h5 id="-_config-yml">/_config.yml</h5>
+<pre class="highlight"><code class="hljs undefined">date_format: "%d %B %Y"
+</code></pre>
+<p>Esta implementación tiene una falencia que se hace evidente en el la página del Archivo de posts, por el momento mi solución es la presentar el mes en formato numérico cambiando las siguientes líneas en el archivo <code>/source/post/archive_post.html</code></p>
+<h5 id="-source-post-archive_post-html">/source/post/archive_post.html</h5>
+<pre class="highlight"><code class="hljs xml">{% raw %}
+...
+<span class="hljs-tag">&lt;<span class="hljs-title">time</span> <span class="hljs-attribute">datetime</span>=<span class="hljs-value">"{{ post.date | datetime | date_to_xmlschema }}"</span> <span class="hljs-attribute">pubdate</span>&gt;</span>{{ post.date | date: "<span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'month'</span>&gt;</span>%m<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>/<span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'day'</span>&gt;</span>%d<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span> <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">'year'</span>&gt;</span>%Y<span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>"}}<span class="hljs-tag">&lt;/<span class="hljs-title">time</span>&gt;</span>
+...
+{% endraw %}
+</code></pre>
+]]></description>
+            <link>index.html/posts/hacking-octopress.html</link>
+            <guid isPermaLink="true">index.html/posts/hacking-octopress.html</guid>
+            <dc:creator><![CDATA[ALFONSO VACAFLORES]]></dc:creator>
+            <pubDate>Mon, 14 Sep 2015 00:55:05 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Git shortcuts]]></title>
+            <description><![CDATA[<p>Git es un mundo lleno de comandos que deben ser utilizados en la consola, se me hace muy difícil poder recordar muchos de ellos y termino utilizando siempre los los básicos. 
+Hace unos días encontré un tutorial <a href="http://gitimmersion.com/index.html">Git Inmersion</a> el cual es bastante corto pero muy bien estructurado.</p>
+<p>En este tutorial encontré una sección donde el autor hace referencia a un comando para obtener el log en un formato muy adecuado.</p>
+<pre class="highlight"><code class="hljs undefined">git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+</code></pre>
+<p>El resultado de este comando es muy conciso y de fácil lectura</p>
+<pre class="highlight"><code class="hljs undefined">$ git log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short
+* a1189df 2014-10-25 | Added a comment (HEAD, master) [Jim Weirich]
+* 6083cb8 2014-10-25 | Added a default value [Jim Weirich]
+* b24f3ff 2014-10-25 | Using ARGV [Jim Weirich]
+* cf466b4 2014-10-25 | First Commit [Jim Weirich]
+</code></pre>
+<p>Como comprenderán seria casi imposible utilizar este comando cada vez que necesitamos consultar el log, por lo que lo ideal es grabarlo en nuestro <code>.gitconfig</code> dentro de la sección de <code>[alias]</code> para poder tenerlo disponible mediante un comando simple como por ejemplo</p>
+<h5 id="-gitconfig">.gitconfig</h5>
+<pre class="highlight"><code class="hljs ini"><span class="hljs-title">[alias]</span>
+<span class="hljs-setting">hist = <span class="hljs-value">log --pretty=format:'%h %ad | %s%d [%an]' --graph --date=short</span></span>
+</code></pre>
+<p>De esta manera usaremos este comando utilizando el shortcut <code>git hist</code></p>
+]]></description>
+            <link>index.html/posts/git-shortcuts.html</link>
+            <guid isPermaLink="true">index.html/posts/git-shortcuts.html</guid>
+            <dc:creator><![CDATA[ALFONSO VACAFLORES]]></dc:creator>
+            <pubDate>Mon, 14 Sep 2015 00:55:05 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[plist en Swift]]></title>
+            <description><![CDATA[<p>La presentación del nuevo leguaje de programación Swift a despertado a un grupo muy grande programadores y no programadores, todos ansiosos por experimentar con el nuevo juguete.</p>
+<p>La primera idea que uno tiene es que al ser un leguaje nuevo debemos limitarnos solamente a sus comandos, funciones, etc, sin embargo en la práctica eso no es posible. Hay una infinidad de librerías en Cocoa que usan clases de Objective-C que son fundamentales para la programación en iOS y OS X, tal es el caso de las librerías necesarias para leer un plist.</p>
+<p>El siguiente ejemplo muestra la manera mas elegante que encontré para realizar la tarea de leer un plist el cual esta compuesto por un arreglo de diccionarios.</p>
+<h2 id="el-plist">El plist</h2>
+<p><img src="/img/plist.png" alt="img"><br>El plist contiene una estructura básica de un <code>array</code> y n <code>dictionary</code></p>
+<h2 id="abrir-el-plist">Abrir el plist</h2>
+<p>Primeramente necesitamos definir la ruta y posteriormente gargar el archivo en memória</p>
+<pre class="highlight"><code class="hljs stylus">let path = NSBundle.<span class="hljs-function"><span class="hljs-title">mainBundle</span><span class="hljs-params">()</span></span>.<span class="hljs-function"><span class="hljs-title">pathForResource</span><span class="hljs-params">(<span class="hljs-string">"List"</span>, ofType: <span class="hljs-string">"plist"</span>)</span></span>
+let array = <span class="hljs-function"><span class="hljs-title">NSArray</span><span class="hljs-params">(contentsOfFile: path)</span></span>
+</code></pre><p>A partir de esto podemos consultar el contenido del <code>array</code> usando <code>println(array)</code> y obtendremos el resultado en la consola</p>
+<pre class="highlight"><code class="hljs nix">(
+        {
+        <span class="hljs-variable">Nombre =</span> Hugo;
+        <span class="hljs-variable">Telefono =</span> <span class="hljs-number">2123268000</span>;
+    },
+        {
+        <span class="hljs-variable">Nombre =</span> Esteban;
+        <span class="hljs-variable">Telefono =</span> <span class="hljs-number">2125648765</span>;
+    },
+        {
+        <span class="hljs-variable">Nombre =</span> Sergio;
+        <span class="hljs-variable">Telefono =</span> <span class="hljs-number">2127547654</span>;
+    }
+)
+</code></pre><p>Hasta ahora todo parece muy facil e intunitivo, sin embargo obtener los valores de cada diccionario individualmente es la parte que necesita de intrucciones especiales</p>
+<h2 id="iterar-el-array">Iterar el array</h2>
+<p>Para realizar esta tarea es necesario realizar el <strong>casting</strong> a <code>AnyObject</code> y luego hacer un nuevo <strong>casting</strong> de cada elemento a <code>NSDictionay</code> de la siguiente manera:</p>
+<pre class="highlight"><code class="hljs swift"><span class="hljs-keyword">for</span> user:<span class="hljs-type">AnyObject</span> <span class="hljs-keyword">in</span> array {
+
+  <span class="hljs-keyword">let</span> dict:<span class="hljs-type">NSDictionary</span> = user <span class="hljs-keyword">as</span> <span class="hljs-type">NSDictionary</span>
+
+  <span class="hljs-built_in">println</span>(dict[<span class="hljs-string">"Nombre"</span>])
+  <span class="hljs-built_in">println</span>(dict[<span class="hljs-string">"Telefono"</span>])                
+}
+</code></pre>
+<p>A partir de aquí podremos obtener los valores que estan contenidos en cada diccionario dentro del plist.</p>
+]]></description>
+            <link>index.html/posts/plist-en-swift.html</link>
+            <guid isPermaLink="true">index.html/posts/plist-en-swift.html</guid>
+            <dc:creator><![CDATA[ALFONSO VACAFLORES]]></dc:creator>
+            <pubDate>Mon, 14 Sep 2015 00:55:05 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Scopes en Rails 4]]></title>
+            <description><![CDATA[<p>Rails es un framework muy flexible, existen muchas tareas que se las pueden hacer de diferentes maneras, sin embargo esta flexibilidad se ve empañada por la confusión que existe en internet. Cada version de Rails incorpora nuevos comandos y retira otros, también se puede ver que la sintaxis de los comandos ha ido cambiando en cada versión.</p>
+<p>En este post me quiero referir específicamente a los <strong>scopes</strong> y su sintaxis en Rails 4, describiré la sintaxis que me parece mas clara y sencilla. </p>
+<p>Primeramente definamos los modelos de ejemplo</p>
+<pre class="highlight"><code class="hljs ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Product</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Base</span></span></span>
+  belongs_to <span class="hljs-symbol">:type</span>
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Type</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Base</span></span></span>
+  has_many<span class="hljs-number">_</span> <span class="hljs-symbol">:products</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>Así mismo, asumamos que cada modelo cuenta con un campo <code>title</code></p>
+<h2 id="scope-est-tico">scope estático</h2>
+<p>Serán aquellos que actúan sobre un modelo y que tienen una condición fija, bajo estas premisas, estos podrían ser scopes definidos en los modelo <code>Product</code>:</p>
+<pre class="highlight"><code class="hljs ruby">scope <span class="hljs-symbol">:fixedtitle</span>, lambda { where(<span class="hljs-symbol">:title</span> =&gt; <span class="hljs-string">'computer'</span>) }
+</code></pre>
+<p>Podemos llamar el scope con el siguiente comando <code>Product.fixedtitle</code> que producira el seguinete resultado:</p>
+<pre class="highlight"><code class="hljs sql"><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-string">"products"</span>.* 
+<span class="hljs-keyword">FROM</span> <span class="hljs-string">"products"</span>  
+<span class="hljs-keyword">WHERE</span> <span class="hljs-string">"products"</span>.<span class="hljs-string">"title"</span> = <span class="hljs-string">'computer'</span>
+</span></code></pre><p>Otro ejemplo de scope estático podría ser:</p>
+<pre class="highlight"><code class="hljs ruby">scope <span class="hljs-symbol">:titlecontains</span>, lambda { where(<span class="hljs-string">"title LIKE '%p%'"</span>) }
+</code></pre>
+<p>Que lo llamariamos con el siguiente comando <code>Product.titlecontains</code> y producira el siguiente resultado:</p>
+<pre class="highlight"><code class="hljs sql"><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-string">"products"</span>.* 
+<span class="hljs-keyword">FROM</span> <span class="hljs-string">"products"</span>  
+<span class="hljs-keyword">WHERE</span> (title <span class="hljs-keyword">LIKE</span> <span class="hljs-string">'%p%'</span>)
+</span></code></pre><p>Incluso podríamos usar ambos scopes en la misma consulta <code>Product.fixedtitle.titlecontains</code></p>
+<pre class="highlight"><code class="hljs sql"><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-string">"products"</span>.* 
+<span class="hljs-keyword">FROM</span> <span class="hljs-string">"products"</span>  
+<span class="hljs-keyword">WHERE</span> <span class="hljs-string">"products"</span>.<span class="hljs-string">"title"</span> = <span class="hljs-string">'computer'</span> <span class="hljs-keyword">AND</span> (title <span class="hljs-keyword">LIKE</span> <span class="hljs-string">'%a%'</span>)
+</span></code></pre><h2 id="scope-variable">scope variable</h2>
+<p>En este caso lo que esperamos es que el scope reciba una variable dinámicamente, para lograrlo debemos usar <code>|variable|</code> para recibir el valor:</p>
+<pre class="highlight"><code class="hljs ruby">scope <span class="hljs-symbol">:variabletitle</span>, lambda { |term| where(<span class="hljs-string">"title LIKE '%<span class="hljs-subst">#{term}</span>%'"</span>) }
+</code></pre>
+<p>Deberemos pasar el valor en la llamada al scope de la siguiente manera <code>Product.variabletitle(&#39;compu&#39;)</code> que producira el siguiente resultado:</p>
+<pre class="highlight"><code class="hljs sql"><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-string">"products"</span>.* 
+<span class="hljs-keyword">FROM</span> <span class="hljs-string">"products"</span>  
+<span class="hljs-keyword">WHERE</span> (title <span class="hljs-keyword">LIKE</span> <span class="hljs-string">'%compu%'</span>)
+</span></code></pre><h2 id="scope-variable-con-dos-modelos">scope variable con dos modelos</h2>
+<p>Por ultimo, el caso mas complejo que me tomo varias horas de investigación y pruebas y que me empujo a escribir este post. Como podrán imaginar necesitamos usaremos un scope variable y también usaremos <strong>joins</strong> para enlazar al segundo modelo</p>
+<pre class="highlight"><code class="hljs ruby">scope <span class="hljs-symbol">:bytype</span>, lambda { |type_name| joins(<span class="hljs-symbol">:type</span>).where(‘type.title’ =&gt; type_name) }
+</code></pre>
+<p>Llamaremos a este scope con <code>Product.bytype(&#39;electronics&#39;)</code> y producira el siguiente resultado:</p>
+<pre class="highlight"><code class="hljs sql"><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-string">"products"</span>.* 
+<span class="hljs-keyword">FROM</span> <span class="hljs-string">"products"</span> <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">"types"</span> <span class="hljs-keyword">ON</span> <span class="hljs-string">"types"</span>.<span class="hljs-string">"id"</span> = <span class="hljs-string">"products"</span>.<span class="hljs-string">"type_id"</span> 
+<span class="hljs-keyword">WHERE</span> <span class="hljs-string">"types"</span>.<span class="hljs-string">"title"</span> = <span class="hljs-string">'electronics'</span>
+</span></code></pre><p><strong>Scopes</strong> en Rails es un tema bastante amplio sobre el cual hay mucho material (el cual no necesariamente es vigente). Esta propuesta es sumamente simple pero 100% funcional y puede ser extendida siguiendo el mismo patron.</p>
+]]></description>
+            <link>index.html/posts/scopes-in-rails-4.html</link>
+            <guid isPermaLink="true">index.html/posts/scopes-in-rails-4.html</guid>
+            <dc:creator><![CDATA[ALFONSO VACAFLORES]]></dc:creator>
+            <pubDate>Mon, 14 Sep 2015 00:55:05 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

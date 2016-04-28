@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Scopes en Rails 4 | Por puro gusto</title>
+    <meta name="description" content="" />
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link  rel="stylesheet" href="/css/screen.css" /><link  rel="stylesheet" href="/css/railscasts.css" /><link  rel="stylesheet" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+    <meta name="generator" content="Docpad 6.x" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Rock+Salt" />
+  </head>
+  <body class="post-template nav-closed">
+    <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+      <span class="hidden">Close</span>
+    </a>
+    <ul>
+      
+        <li class="nav-any" role="presentation">
+          <a href="/">Blog</a>
+        </li>
+      
+        <li class="nav-any" role="presentation">
+          <a href="/about.html">Acerca de...</a>
+        </li>
+      
+        <li class="nav-any" role="presentation">
+          <a href="/recursos.html">Recursos</a>
+        </li>
+      
+        <li class="nav-any" role="presentation">
+          <a href="/proyectos.html">Proyectos</a>
+        </li>
+      
+    </ul>
+</div>
+<span class="nav-cover"></span>
+    <div class="site-wrapper">
+    
+      <header class="main-header post-head" style="background-image: url(/img/rails.jpg)">
+  
+    
+  <nav class="main-nav overlay clearfix">
+    
+    
+      <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+       
+  </nav>
+</header>
+
+<main class="content" role="main">
+  <article class="post">
+
+    <header class="post-header">
+      <h1 class="post-title">Scopes en Rails 4</h1>
+      <section class="post-meta">
+        
+        <time class="post-date" datetime="2014-mayo-23">23 mayo 2014</time> | 
+  <a href="/tags/rails.html">rails</a>, 
+
+  <a href="/tags/ruby.html">ruby</a>, 
+
+  <a href="/tags/web.html">web</a>
+
+      </section>
+    </header>
+    
+    <section class="post-content">
+      <p>Rails es un framework muy flexible, existen muchas tareas que se las pueden hacer de diferentes maneras, sin embargo esta flexibilidad se ve empañada por la confusión que existe en internet. Cada version de Rails incorpora nuevos comandos y retira otros, también se puede ver que la sintaxis de los comandos ha ido cambiando en cada versión.</p>
+<p>En este post me quiero referir específicamente a los <strong>scopes</strong> y su sintaxis en Rails 4, describiré la sintaxis que me parece mas clara y sencilla. </p>
+<p>Primeramente definamos los modelos de ejemplo</p>
+<pre class="highlight"><code class="hljs ruby"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Product</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Base</span></span></span>
+  belongs_to <span class="hljs-symbol">:type</span>
+<span class="hljs-keyword">end</span>
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Type</span> <span class="hljs-inheritance">&lt; <span class="hljs-parent">ActiveRecord::Base</span></span></span>
+  has_many<span class="hljs-number">_</span> <span class="hljs-symbol">:products</span>
+<span class="hljs-keyword">end</span>
+</code></pre>
+<p>Así mismo, asumamos que cada modelo cuenta con un campo <code>title</code></p>
+<h2 id="scope-est-tico">scope estático</h2>
+<p>Serán aquellos que actúan sobre un modelo y que tienen una condición fija, bajo estas premisas, estos podrían ser scopes definidos en los modelo <code>Product</code>:</p>
+<pre class="highlight"><code class="hljs ruby">scope <span class="hljs-symbol">:fixedtitle</span>, lambda { where(<span class="hljs-symbol">:title</span> =&gt; <span class="hljs-string">'computer'</span>) }
+</code></pre>
+<p>Podemos llamar el scope con el siguiente comando <code>Product.fixedtitle</code> que producira el seguinete resultado:</p>
+<pre class="highlight"><code class="hljs sql"><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-string">"products"</span>.* 
+<span class="hljs-keyword">FROM</span> <span class="hljs-string">"products"</span>  
+<span class="hljs-keyword">WHERE</span> <span class="hljs-string">"products"</span>.<span class="hljs-string">"title"</span> = <span class="hljs-string">'computer'</span>
+</span></code></pre><p>Otro ejemplo de scope estático podría ser:</p>
+<pre class="highlight"><code class="hljs ruby">scope <span class="hljs-symbol">:titlecontains</span>, lambda { where(<span class="hljs-string">"title LIKE '%p%'"</span>) }
+</code></pre>
+<p>Que lo llamariamos con el siguiente comando <code>Product.titlecontains</code> y producira el siguiente resultado:</p>
+<pre class="highlight"><code class="hljs sql"><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-string">"products"</span>.* 
+<span class="hljs-keyword">FROM</span> <span class="hljs-string">"products"</span>  
+<span class="hljs-keyword">WHERE</span> (title <span class="hljs-keyword">LIKE</span> <span class="hljs-string">'%p%'</span>)
+</span></code></pre><p>Incluso podríamos usar ambos scopes en la misma consulta <code>Product.fixedtitle.titlecontains</code></p>
+<pre class="highlight"><code class="hljs sql"><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-string">"products"</span>.* 
+<span class="hljs-keyword">FROM</span> <span class="hljs-string">"products"</span>  
+<span class="hljs-keyword">WHERE</span> <span class="hljs-string">"products"</span>.<span class="hljs-string">"title"</span> = <span class="hljs-string">'computer'</span> <span class="hljs-keyword">AND</span> (title <span class="hljs-keyword">LIKE</span> <span class="hljs-string">'%a%'</span>)
+</span></code></pre><h2 id="scope-variable">scope variable</h2>
+<p>En este caso lo que esperamos es que el scope reciba una variable dinámicamente, para lograrlo debemos usar <code>|variable|</code> para recibir el valor:</p>
+<pre class="highlight"><code class="hljs ruby">scope <span class="hljs-symbol">:variabletitle</span>, lambda { |term| where(<span class="hljs-string">"title LIKE '%<span class="hljs-subst">#{term}</span>%'"</span>) }
+</code></pre>
+<p>Deberemos pasar el valor en la llamada al scope de la siguiente manera <code>Product.variabletitle(&#39;compu&#39;)</code> que producira el siguiente resultado:</p>
+<pre class="highlight"><code class="hljs sql"><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-string">"products"</span>.* 
+<span class="hljs-keyword">FROM</span> <span class="hljs-string">"products"</span>  
+<span class="hljs-keyword">WHERE</span> (title <span class="hljs-keyword">LIKE</span> <span class="hljs-string">'%compu%'</span>)
+</span></code></pre><h2 id="scope-variable-con-dos-modelos">scope variable con dos modelos</h2>
+<p>Por ultimo, el caso mas complejo que me tomo varias horas de investigación y pruebas y que me empujo a escribir este post. Como podrán imaginar necesitamos usaremos un scope variable y también usaremos <strong>joins</strong> para enlazar al segundo modelo</p>
+<pre class="highlight"><code class="hljs ruby">scope <span class="hljs-symbol">:bytype</span>, lambda { |type_name| joins(<span class="hljs-symbol">:type</span>).where(‘type.title’ =&gt; type_name) }
+</code></pre>
+<p>Llamaremos a este scope con <code>Product.bytype(&#39;electronics&#39;)</code> y producira el siguiente resultado:</p>
+<pre class="highlight"><code class="hljs sql"><span class="hljs-operator"><span class="hljs-keyword">SELECT</span> <span class="hljs-string">"products"</span>.* 
+<span class="hljs-keyword">FROM</span> <span class="hljs-string">"products"</span> <span class="hljs-keyword">INNER</span> <span class="hljs-keyword">JOIN</span> <span class="hljs-string">"types"</span> <span class="hljs-keyword">ON</span> <span class="hljs-string">"types"</span>.<span class="hljs-string">"id"</span> = <span class="hljs-string">"products"</span>.<span class="hljs-string">"type_id"</span> 
+<span class="hljs-keyword">WHERE</span> <span class="hljs-string">"types"</span>.<span class="hljs-string">"title"</span> = <span class="hljs-string">'electronics'</span>
+</span></code></pre><p><strong>Scopes</strong> en Rails es un tema bastante amplio sobre el cual hay mucho material (el cual no necesariamente es vigente). Esta propuesta es sumamente simple pero 100% funcional y puede ser extendida siguiendo el mismo patron.</p>
+
+    </section>
+    
+    <footer class="post-footer">
+
+      
+      <figure class="author-image">
+        <a class="img" href="" style="background-image: url(/img/logo.png)"><span class="hidden">Alfonso Vacaflores's Picture</span></a>
+      </figure>
+      
+
+      <section class="author">
+        <h4><a href="">Alfonso Vacaflores</a></h4>
+
+        
+        <div class="author-meta">
+          
+          <span class="author-location icon-location">Tarija, Bolivia</span>
+          
+          
+        </div>
+      </section>
+
+      <section class="share">
+        <h4>Compartir</h4>
+        <a class="icon-twitter" href="https://twitter.com/intent/tweet?text=Scopes%20en%20Rails%204&amp;url="
+          onclick="window.open(this.href + window.location.href, 'twitter-share', 'width=550,height=235');return false;">
+          <span class="hidden">Twitter</span>
+        </a>
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u="
+          onclick="window.open(this.href + window.location.href, 'facebook-share','width=580,height=296');return false;">
+          <span class="hidden">Facebook</span>
+        </a>
+        <a class="icon-google-plus" href="https://plus.google.com/share?url="
+          onclick="window.open(this.href + window.location.href, 'google-plus-share', 'width=490,height=530');return false;">
+          <span class="hidden">Google+</span>
+        </a>
+      </section>
+
+    </footer>
+
+  </article>
+</main>
+
+<aside class="read-next">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      
+        <a class="read-next-story" style="background-image: url(/img/octopress.jpg)" href="/posts/hacking-octopress.html">
+          <section class="post">
+            <h2>Hacking Octopress</h2>
+            <p>Octopress es un framework para páginas estáticas basado en Jekyll, sin lugar a duda es una excelente y divertida&hellip;</p>
+          </section>
+        </a>
+      
+      
+        <a class="read-next-story prev" style="background-image: url(/img/swift.jpg)" href="/posts/plist-en-swift.html">
+          <section class="post">
+            <h2>plist en Swift</h2>
+            <p>La presentación del nuevo leguaje de programación Swift a despertado a un grupo muy grande programadores y no programadores,&hellip;</p>
+          </section>
+        </a>
+      
+    
+  
+    
+  
+    
+  
+    
+  
+</aside>
+
+      <footer class="site-footer clearfix">
+      	<div class="tagcloud">
+	
+		<a href="/tags/android.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> android </a>
+	
+		<a href="/tags/asynctaks.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> asynctaks </a>
+	
+		<a href="/tags/bi.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> bi </a>
+	
+		<a href="/tags/blog.html" data-tag-count="3" data-tag-weight="0.7924812503605781" style="font-size: 358.49625007211563%;"> blog </a>
+	
+		<a href="/tags/docpad.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> docpad </a>
+	
+		<a href="/tags/games.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> games </a>
+	
+		<a href="/tags/general.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> general </a>
+	
+		<a href="/tags/git.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> git </a>
+	
+		<a href="/tags/ios.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> ios </a>
+	
+		<a href="/tags/java.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> java </a>
+	
+		<a href="/tags/json.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> json </a>
+	
+		<a href="/tags/movil.html" data-tag-count="3" data-tag-weight="0.7924812503605781" style="font-size: 358.49625007211563%;"> movil </a>
+	
+		<a href="/tags/node-js.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> node.js </a>
+	
+		<a href="/tags/objective-c.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> objective-c </a>
+	
+		<a href="/tags/octopress.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> octopress </a>
+	
+		<a href="/tags/rails.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> rails </a>
+	
+		<a href="/tags/reportes.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> reportes </a>
+	
+		<a href="/tags/ruby.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> ruby </a>
+	
+		<a href="/tags/spritekit.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> spritekit </a>
+	
+		<a href="/tags/ssrs.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> ssrs </a>
+	
+		<a href="/tags/swift.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> swift </a>
+	
+		<a href="/tags/vbasic.html" data-tag-count="2" data-tag-weight="0.5" style="font-size: 300%;"> vbasic </a>
+	
+		<a href="/tags/web.html" data-tag-count="4" data-tag-weight="1" style="font-size: 400%;"> web </a>
+	
+		<a href="/tags/yaml.html" data-tag-count="1" data-tag-weight="0" style="font-size: 200%;"> yaml </a>
+	
+</div>
+        <section class="copyright"><a href="index.html">Alfonso Vacaflores</a> &copy; 2016</section>
+        <section class="poweredby">Powered by <a href="https://docpad.org">DocPad</a></section>
+      </footer>
+
+    </div>
+    <script defer="defer"  src="//code.jquery.com/jquery-2.1.4.min.js"></script><script defer="defer"  src="/js/jquery.fitvids.js"></script><script defer="defer"  src="/js/index.js"></script>
+  </body>
+</html>
